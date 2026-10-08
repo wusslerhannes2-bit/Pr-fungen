@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prüfung Realschule BW — Mathematik Abschlussprüfungen 1990–2024</title>
+  <meta name="description" content="Moderne, übersichtliche Sammlung aller Realschulabschlussprüfungen Mathematik Baden-Württemberg (1990–2024). Alle Aufgaben, Lösungen, thematische Gliederung und Prüfungsordnungen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+</head>
+<body>
+
+  <!-- Background decorative glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <a href="#jahre" class="brand-link" id="brand-home-link">
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+              <path d="M6 6h10"></path>
+              <path d="M6 10h10"></path>
+              <path d="M6 14h7"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">Prüfung Realschule <strong>BW</strong></span>
+            <span class="brand-subtitle">Mathematik Abschlussprüfung 1990–2024</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Links dropdown / nav -->
+      <nav class="header-nav">
+        <div class="original-links-menu">
+          <button class="nav-btn ghost-btn" id="original-menu-btn" title="Walter Bauer Hauptkategorien">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span>Walter Bauer Portal</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-panel" id="original-dropdown">
+            <div class="dropdown-header">Originalseiten (walterbauer.net)</div>
+            <a href="http://www.walterbauer.net/index.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">🏠</span> Startseite (Home)
+            </a>
+            <a href="http://www.walterbauer.net/mathematik.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">➗</span> Mathematik Gesamtübersicht
+            </a>
+            <a href="http://www.walterbauer.net/lernmaterial.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">📚</span> Lernmaterial
+            </a>
+            <a href="http://www.walterbauer.net/informatik.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">💻</span> Informatik
+            </a>
+            <a href="http://www.walterbauer.net/physik.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">⚡</span> Physik
+            </a>
+            <a href="http://www.walterbauer.net/geschichte.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">🏛️</span> Geschichte
+            </a>
+            <a href="http://www.walterbauer.net/linkliste.html" target="_blank" rel="noopener" class="dropdown-item">
+              <span class="dropdown-icon">🔗</span> Linkliste
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="http://www.walterbauer.net/pruefungrealschule.html" target="_blank" rel="noopener" class="dropdown-item highlight">
+              <span class="dropdown-icon">↗</span> Original-Prüfungsseite aufrufen
+            </a>
+          </div>
+        </div>
+
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Design umschalten">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://github.com/wusslerhannes2-bit/Pr-fungen" target="_blank" rel="noopener" class="github-link-btn" title="GitHub Repository">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Baden-Württemberg · Realschule Haupttermin
+      </div>
+      <h1 class="hero-heading">
+        Abschlussprüfungsaufgaben <br>
+        <span class="gradient-text">Mathematik (1990–2024)</span>
+      </h1>
+      <p class="hero-lead">
+        Das umfassende digitale Archiv zur Realschulprüfung in Baden-Württemberg. 
+        Klar strukturiert, mit direkten Links zu allen Original-Aufgaben, ausführlichen Musterlösungen und thematischer Gliederung.
+      </p>
+
+      <!-- Universal Search & Quick Filter Bar -->
+      <div class="search-box-wrapper">
+        <div class="search-input-box">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="search" 
+            id="global-search-input" 
+            placeholder="Jahrgang (z.B. 2024), Thema (z.B. Parabel, Trigonometrie) oder Aufgabe suchen..."
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button class="clear-search-btn" id="clear-search-btn" title="Suche leeren" style="display: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="search-shortcuts" id="search-shortcuts">
+          <span class="shortcut-label">Schnellfilter:</span>
+          <button class="quick-chip" data-query="2024">2024</button>
+          <button class="quick-chip" data-query="Funktionen">Funktionen</button>
+          <button class="quick-chip" data-query="Trigonometrie">Trigonometrie</button>
+          <button class="quick-chip" data-query="Pyramide">Pyramiden</button>
+          <button class="quick-chip" data-query="Wahrscheinlichkeit">Stochastik</button>
+          <button class="quick-chip" data-query="Gleichungssysteme">LGS</button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">35</span>
+          <span class="stat-label">Prüfungsjahre</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">760+</span>
+          <span class="stat-label">Musteraufgaben</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">22</span>
+          <span class="stat-label">Themengebiete</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Prüfungsreformen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Navigation Tabs -->
+  <div class="tabs-sticky-wrapper">
+    <div class="container">
+      <nav class="main-tabs" role="tablist">
+        <button class="tab-btn active" data-target="tab-jahre" role="tab" id="tab-jahre-btn">
+          <span class="tab-icon">📅</span>
+          <span>Prüfungsjahre (1990–2024)</span>
+          <span class="tab-badge" id="years-count-badge">35</span>
+        </button>
+        <button class="tab-btn" data-target="tab-gliederung" role="tab" id="tab-gliederung-btn">
+          <span class="tab-icon">📑</span>
+          <span>Thematische Gliederung</span>
+          <span class="tab-badge">22</span>
+        </button>
+        <button class="tab-btn" data-target="tab-reformen" role="tab" id="tab-reformen-btn">
+          <span class="tab-icon">⚖️</span>
+          <span>Prüfungsordnung & Reformen</span>
+        </button>
+        <button class="tab-btn" data-target="tab-formeln" role="tab" id="tab-formeln-btn">
+          <span class="tab-icon">📏</span>
+          <span>Formelsammlung & Merkhilfe</span>
+        </button>
+        <button class="tab-btn" data-target="tab-ueben" role="tab" id="tab-ueben-btn">
+          <span class="tab-icon">🎲</span>
+          <span>Zufallsaufgabe</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <main class="main-content container">
+
+    <!-- TAB 1: PRÜFUNGSJAHRE -->
+    <section class="tab-pane active" id="tab-jahre">
+      <div class="section-toolbar">
+        <div class="toolbar-left">
+          <h2 class="section-title">Abschlussprüfungen nach Jahrgang</h2>
+          <p class="section-desc">Wähle einen Prüfungsjahrgang, um Aufgaben, Teilpunkte und Original-Lösungen einzusehen.</p>
+        </div>
+        <div class="toolbar-right">
+          <div class="era-filter-pills" id="era-filter-container">
+            <button class="era-pill active" data-era="all">Alle (35)</button>
+            <button class="era-pill" data-era="reform-2021">Ab 2021 (A1/A2/B)</button>
+            <button class="era-pill" data-era="reform-2008">2008–2020</button>
+            <button class="era-pill" data-era="reform-2002">2002–2007</button>
+            <button class="era-pill" data-era="reform-1996">1996–2001</button>
+            <button class="era-pill" data-era="classic-1990">1990–1995</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Years Grid -->
+      <div class="years-grid" id="years-grid-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- TAB 2: THEMATISCHE GLIEDERUNG -->
+    <section class="tab-pane" id="tab-gliederung">
+      <div class="section-toolbar">
+        <div class="toolbar-left">
+          <h2 class="section-title">Thematische Gliederung nach mathematischen Stoffgebieten</h2>
+          <p class="section-desc">Gezielt nach Themen lernen: Finde alle Prüfungsaufgaben geordnet nach mathematischen Kerngebieten.</p>
+        </div>
+        <div class="toolbar-right">
+          <div class="category-filter-select-wrapper">
+            <select id="topic-category-filter" class="custom-select">
+              <option value="all">Alle Kategorien anzeigen</option>
+              <option value="Algebra & Gleichungen">Algebra & Gleichungen</option>
+              <option value="Funktionen & Analysis">Funktionen & Analysis</option>
+              <option value="Geometrie & Trigonometrie">Geometrie & Trigonometrie</option>
+              <option value="Stereometrie (Körper)">Stereometrie (Körper)</option>
+              <option value="Stochastik">Stochastik (Wahrscheinlichkeit)</option>
+              <option value="Sachrechnen & Finanzmathematik">Sachrechnen & Finanzmathematik</option>
+              <option value="Mathematische Kompetenzen">Verstehen & Begründen</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="topics-accordion" id="topics-accordion-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- TAB 3: PRÜFUNGSORDNUNG & REFORMEN -->
+    <section class="tab-pane" id="tab-reformen">
+      <div class="section-toolbar">
+        <div class="toolbar-left">
+          <h2 class="section-title">Entwicklung der Realschulabschlussprüfung in Baden-Württemberg</h2>
+          <p class="section-desc">Chronologische Übersicht aller Rechtsänderungen, Punkteverteilungen und Prüfungsmodi seit 1996.</p>
+        </div>
+      </div>
+
+      <!-- Timeline & Simulator Layout -->
+      <div class="reformen-layout">
+        <div class="timeline-container" id="reforms-timeline-container">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <div class="points-calculator-card">
+          <div class="calc-header">
+            <span class="calc-badge">Interaktiver Rechner</span>
+            <h3 class="calc-title">Punktesimulator für Prüfung ab 2021</h3>
+            <p class="calc-desc">Berechne deine Gesamtpunktzahl nach der aktuellen Prüfungsordnung (Bildungsplan 2016):</p>
+          </div>
+
+          <form id="points-calc-form" class="calc-form">
+            <div class="calc-input-group">
+              <div class="calc-label-row">
+                <label for="calc-a1"><strong>Pflichtteil A1</strong> (hilfsmittelfrei)</label>
+                <span class="max-points-tag">max. 10 P</span>
+              </div>
+              <input type="range" id="calc-a1" min="0" max="10" step="0.5" value="7">
+              <div class="calc-slider-value"><span id="calc-a1-val">7.0</span> / 10.0 Punkte</div>
+            </div>
+
+            <div class="calc-input-group">
+              <div class="calc-label-row">
+                <label for="calc-a2"><strong>Pflichtteil A2</strong> (mit Taschenrechner)</label>
+                <span class="max-points-tag">max. 20 P</span>
+              </div>
+              <input type="range" id="calc-a2" min="0" max="20" step="0.5" value="15">
+              <div class="calc-slider-value"><span id="calc-a2-val">15.0</span> / 20.0 Punkte</div>
+            </div>
+
+            <div class="calc-input-group">
+              <div class="calc-label-row">
+                <label for="calc-b"><strong>Wahlteil B</strong> (2 von 4 Aufgaben)</label>
+                <span class="max-points-tag">max. 20 P</span>
+              </div>
+              <input type="range" id="calc-b" min="0" max="20" step="0.5" value="16">
+              <div class="calc-slider-value"><span id="calc-b-val">16.0</span> / 20.0 Punkte</div>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="result-score-block">
+                <span class="result-caption">Erreichte Gesamtpunktzahl:</span>
+                <span class="result-number" id="calc-total-points">38.0</span>
+                <span class="result-denom">/ 50.0 Punkten</span>
+              </div>
+              <div class="result-grade-block">
+                <span class="result-caption">Schätzungsnote (BW Tabelle):</span>
+                <span class="result-grade" id="calc-grade">Note 2,0 (Gut)</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: FORMELSAMMLUNG -->
+    <section class="tab-pane" id="tab-formeln">
+      <div class="section-toolbar">
+        <div class="toolbar-left">
+          <h2 class="section-title">Wichtigste Formeln & Merkhilfen zur Realschulprüfung</h2>
+          <p class="section-desc">Die zentralen Formeln für Stereometrie, Trigonometrie, Funktionen und Wahrscheinlichkeitsrechnung auf einen Blick.</p>
+        </div>
+      </div>
+
+      <div class="formulas-grid" id="formulas-grid-container">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+
+    <!-- TAB 5: ZUFALLSAUFGABE / ÜBEN -->
+    <section class="tab-pane" id="tab-ueben">
+      <div class="section-toolbar">
+        <div class="toolbar-left">
+          <h2 class="section-title">Zufallsaufgabe für das tägliche Prüfungstraining</h2>
+          <p class="section-desc">Lass dich überraschen oder filtere nach deinen persönlichen Schwachstellen für eine realistische Übungseinheit.</p>
+        </div>
+      </div>
+
+      <div class="random-task-card">
+        <div class="random-controls">
+          <div class="control-row">
+            <label for="random-topic-select">Themengebiet filtern:</label>
+            <select id="random-topic-select" class="custom-select">
+              <option value="all">Alle Themengebiete (Gemischt)</option>
+            </select>
+          </div>
+          <button class="primary-btn pulse" id="roll-random-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="8" cy="8" r="1.5" fill="currentColor"></circle>
+              <circle cx="16" cy="16" r="1.5" fill="currentColor"></circle>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+              <circle cx="16" cy="8" r="1.5" fill="currentColor"></circle>
+              <circle cx="8" cy="16" r="1.5" fill="currentColor"></circle>
+            </svg>
+            <span>Neue Prüfungsaufgabe ziehen!</span>
+          </button>
+        </div>
+
+        <div class="random-result-card" id="random-task-display">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Task Quick Action Modal / Drawer -->
+  <div class="modal-backdrop" id="task-modal" style="display: none;">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Schließen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content" id="modal-body-content">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="brand-text">
+            <span class="brand-title">Prüfung Realschule BW</span>
+            <p class="footer-attribution">
+              Basierend auf der didaktischen Aufarbeitung von <strong>Walter Bauer</strong> (ehem. RS-Lehrer), 
+              der über Jahrzehnte die Prüfungsaufgaben für Schüler und Lehrer öffentlich dokumentiert hat.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#jahre" class="footer-nav-link" data-tab="tab-jahre">Prüfungsjahre (1990–2024)</a></li>
+            <li><a href="#gliederung" class="footer-nav-link" data-tab="tab-gliederung">Themen-Gliederung</a></li>
+            <li><a href="#reformen" class="footer-nav-link" data-tab="tab-reformen">Prüfungsordnungen (1996–2021)</a></li>
+            <li><a href="#formeln" class="footer-nav-link" data-tab="tab-formeln">Formelsammlung</a></li>
+            <li><a href="#ueben" class="footer-nav-link" data-tab="tab-ueben">Zufallsaufgabe</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Originalquelle & Rechtliches</h4>
+          <ul class="footer-links">
+            <li><a href="http://www.walterbauer.net/pruefungrealschule.html" target="_blank" rel="noopener">walterbauer.net / Prüfung Realschule</a></li>
+            <li><a href="http://www.walterbauer.net/gliederung.html" target="_blank" rel="noopener">walterbauer.net / Gliederung</a></li>
+            <li><a href="https://github.com/wusslerhannes2-bit/Pr-fungen" target="_blank" rel="noopener">GitHub Repository (Pr-fungen)</a></li>
+            <li><span class="text-muted">Bereitgestellt für Bildungszwecke</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 wusslerhannes2-bit · Realschule Mathematik Abschlussprüfung Baden-Württemberg Portal</p>
+        <p class="text-muted">Gehostet auf GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

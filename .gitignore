@@ -1,0 +1,6 @@
+_archive_bookmark_app/
+sshvenv/
+sudoku_site/
+.DS_Store
+*.pyc
+__pycache__/
