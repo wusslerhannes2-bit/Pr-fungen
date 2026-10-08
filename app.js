@@ -1,6 +1,6 @@
 /**
- * Prüfung Realschule BW — Interactive Logic & Application Engine
- * Mathematische Abschlussprüfungen 1990–2024 (walterbauer.net)
+ * Prüfung Realschule BW — 100% In-Page Navigation & Application Engine
+ * Alle Prüfungen (1990–2024) öffnen direkt auf dieser Seite.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,15 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     searchQuery: '',
     eraFilter: 'all',
     topicCategoryFilter: 'all',
-    selectedRandomTopic: 'all',
-    openTopics: new Set()
+    openTopics: new Set(),
+    activeExamYear: null,
+    targetTaskId: null,
+    solvedTasks: new Set(JSON.parse(localStorage.getItem('solved_tasks') || '[]'))
   };
 
   // DOM Elements
   const htmlEl = document.documentElement;
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const originalMenuBtn = document.getElementById('original-menu-btn');
-  const originalMenuContainer = document.querySelector('.original-links-menu');
+  const brandHomeLink = document.getElementById('brand-home-link');
   const globalSearchInput = document.getElementById('global-search-input');
   const clearSearchBtn = document.getElementById('clear-search-btn');
   const searchShortcuts = document.getElementById('search-shortcuts');
@@ -35,9 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const randomTopicSelect = document.getElementById('random-topic-select');
   const rollRandomBtn = document.getElementById('roll-random-btn');
   const randomTaskDisplay = document.getElementById('random-task-display');
-  const taskModal = document.getElementById('task-modal');
-  const modalCloseBtn = document.getElementById('modal-close-btn');
-  const modalBodyContent = document.getElementById('modal-body-content');
+
+  // In-Page Exam Viewer elements
+  const inpageExamView = document.getElementById('inpage-exam-view');
+  const closeInpageViewBtn = document.getElementById('close-inpage-view-btn');
+  const examHeaderBanner = document.getElementById('exam-header-banner');
+  const examTasksList = document.getElementById('exam-tasks-list');
+  const examProgressLabel = document.getElementById('exam-progress-label');
+  const examProgressBar = document.getElementById('exam-progress-bar');
 
   // Points Calculator inputs
   const calcA1 = document.getElementById('calc-a1');
@@ -63,20 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(state.theme === 'dark' ? 'light' : 'dark');
   });
 
-  // ==========================================
-  // 2. Dropdown & Navigation
-  // ==========================================
-  originalMenuBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    originalMenuContainer.classList.toggle('open');
-  });
-  document.addEventListener('click', (e) => {
-    if (!originalMenuContainer.contains(e.target)) {
-      originalMenuContainer.classList.remove('open');
-    }
+  // Home Link returns to default view
+  brandHomeLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeInpageExamView();
+    switchTab('tab-jahre');
   });
 
-  // Tab Switching
+  // ==========================================
+  // 2. Tab Navigation
+  // ==========================================
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-target');
@@ -86,19 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function switchTab(targetId) {
     state.currentTab = targetId;
+    closeInpageExamView(false); // Close in-page viewer when navigating away
     tabButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-target') === targetId));
     tabPanes.forEach(p => p.classList.toggle('active', p.id === targetId));
-    window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 80, behavior: 'smooth' });
+    window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 68, behavior: 'smooth' });
   }
-
-  // Footer nav links
-  document.querySelectorAll('.footer-nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const tabId = link.getAttribute('data-tab');
-      if (tabId) switchTab(tabId);
-    });
-  });
 
   // ==========================================
   // 3. Search Engine
@@ -106,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   globalSearchInput.addEventListener('input', (e) => {
     state.searchQuery = e.target.value.trim().toLowerCase();
     clearSearchBtn.style.display = state.searchQuery ? 'flex' : 'none';
+    closeInpageExamView(false);
     renderYearsGrid();
     renderTopicsAccordion();
   });
@@ -125,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       globalSearchInput.value = q;
       state.searchQuery = q.toLowerCase();
       clearSearchBtn.style.display = 'flex';
+      closeInpageExamView(false);
       renderYearsGrid();
       renderTopicsAccordion();
     });
@@ -136,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       eraFilterContainer.querySelectorAll('.era-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       state.eraFilter = pill.getAttribute('data-era');
+      closeInpageExamView(false);
       renderYearsGrid();
     });
   });
@@ -148,16 +145,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const era = state.eraFilter;
 
     const filtered = YEARS_DATA.filter(item => {
-      // Era check
       if (era !== 'all' && item.eraId !== era) return false;
-
-      // Query check
       if (!q) return true;
       if (item.year.toString().includes(q)) return true;
       if (item.eraTitle.toLowerCase().includes(q)) return true;
       if (item.structure.toLowerCase().includes(q)) return true;
-      if (item.tasks.some(t => t.label.toLowerCase().includes(q))) return true;
-
+      if (item.tasks.some(t => t.label.toLowerCase().includes(q) || t.topic.toLowerCase().includes(q))) return true;
       return false;
     });
 
@@ -166,8 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filtered.length === 0) {
       yearsGrid.innerHTML = `
         <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
-          <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Keine Prüfungsjahrgänge gefunden</p>
-          <p>Für die Suchanfrage "${escapeHtml(q)}" wurden keine Treffer erzielt.</p>
+          <p style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.35rem;">Keine Prüfungen gefunden</p>
+          <p>Für "${escapeHtml(q)}" wurden keine Prüfungen gefunden.</p>
         </div>
       `;
       return;
@@ -175,20 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     yearsGrid.innerHTML = filtered.map(yearData => {
       const tasksHtml = yearData.tasks.map(task => {
-        let chipClass = '';
-        if (task.type === 'pflicht-a1') chipClass = 'chip-pflicht-a1';
-        else if (task.type === 'pflicht-a2') chipClass = 'chip-pflicht-a2';
-        else if (task.type === 'wahl-b') chipClass = 'chip-wahl-b';
-
+        const isSolved = state.solvedTasks.has(task.id);
         return `
-          <button class="task-chip ${chipClass}" 
+          <button class="task-chip ${isSolved ? 'chip-solved' : ''}" 
                   data-year="${yearData.year}" 
-                  data-label="${escapeHtml(task.label)}"
-                  data-taskurl="${escapeHtml(task.taskUrl)}"
-                  data-loesungurl="${escapeHtml(task.loesungUrl)}"
-                  data-pageurl="${escapeHtml(task.pageUrl)}"
-                  title="Aufgabe ${escapeHtml(task.label)} anzeigen">
-            ${escapeHtml(task.label)}
+                  data-taskid="${task.id}"
+                  title="Aufgabe ${escapeHtml(task.label)} direkt öffnen">
+            ${isSolved ? '✓ ' : ''}${escapeHtml(task.label)}
           </button>
         `;
       }).join('');
@@ -198,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="year-card-header">
             <div class="year-title-group">
               <span class="year-number">${yearData.year}</span>
-              <span class="year-points-badge">${yearData.points} Pkt</span>
+              <span class="year-points-badge">${yearData.points} P</span>
             </div>
             <span class="year-era-tag tag-${yearData.badgeColor}">
               ${escapeHtml(yearData.eraTitle.split('(')[0].trim())}
@@ -208,49 +194,183 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="year-structure-info">${escapeHtml(yearData.structure)}</p>
 
           <div class="year-tasks-container">
-            <div class="tasks-label">Aufgabenübersicht (${yearData.taskCount} Aufgaben):</div>
+            <div class="tasks-label">Aufgaben (${yearData.taskCount}):</div>
             <div class="tasks-chip-grid">
-              ${tasksHtml || '<span style="color:var(--text-muted);font-size:0.8rem;">Keine Teilaufgaben hinterlegt</span>'}
+              ${tasksHtml || '<span style="color:var(--text-muted);font-size:0.8rem;">Keine Aufgaben</span>'}
             </div>
           </div>
 
-          <div class="year-card-footer">
-            <a href="${escapeHtml(yearData.uebersichtUrl)}" target="_blank" rel="noopener" class="card-btn primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-              </svg>
-              <span>Gesamtübersicht</span>
-            </a>
-            <a href="${escapeHtml(yearData.sourceYearUrl)}" target="_blank" rel="noopener" class="card-btn secondary" title="Originalseite von Walter Bauer aufrufen">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              <span>Original</span>
-            </a>
-          </div>
+          <button class="open-exam-btn" data-year="${yearData.year}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>Prüfung ${yearData.year} auf der Seite öffnen</span>
+          </button>
         </article>
       `;
     }).join('');
 
-    // Attach click listeners to task chips
+    // Attach click listeners to open the exam directly on the page
+    yearsGrid.querySelectorAll('.open-exam-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const yr = parseInt(btn.getAttribute('data-year'), 10);
+        openInpageExamView(yr);
+      });
+    });
+
     yearsGrid.querySelectorAll('.task-chip').forEach(chip => {
       chip.addEventListener('click', () => {
-        openTaskModal({
-          year: chip.getAttribute('data-year'),
-          label: chip.getAttribute('data-label'),
-          taskUrl: chip.getAttribute('data-taskurl'),
-          loesungUrl: chip.getAttribute('data-loesungurl'),
-          pageUrl: chip.getAttribute('data-pageurl')
-        });
+        const yr = parseInt(chip.getAttribute('data-year'), 10);
+        const taskId = chip.getAttribute('data-taskid');
+        openInpageExamView(yr, taskId);
       });
     });
   }
 
   // ==========================================
-  // 5. Render Topics Accordion
+  // 5. IN-PAGE EXAM & TASK VIEWER (Direkt im Browser)
+  // ==========================================
+  function openInpageExamView(year, targetTaskId = null) {
+    const yearData = YEARS_DATA.find(y => y.year === year);
+    if (!yearData) return;
+
+    state.activeExamYear = year;
+    state.targetTaskId = targetTaskId;
+
+    // Header Banner
+    examHeaderBanner.innerHTML = `
+      <div class="exam-banner-card">
+        <div class="banner-title-group">
+          <span class="year-era-tag tag-${yearData.badgeColor}" style="align-self: flex-start; margin-bottom: 0.35rem;">
+            ${escapeHtml(yearData.eraTitle)}
+          </span>
+          <h2 class="banner-year-title">Mathematik Abschlussprüfung ${yearData.year}</h2>
+          <p class="banner-subtitle">Realschule Baden-Württemberg · Haupttermin</p>
+        </div>
+        <div class="banner-meta-badges">
+          <div class="banner-badge badge-points">Gesamt: ${yearData.points} Punkte</div>
+          <div class="banner-badge">Dauer: ${escapeHtml(yearData.duration)}</div>
+          <div class="banner-badge badge-tools">${escapeHtml(yearData.structure.split('·')[0].trim())}</div>
+        </div>
+      </div>
+    `;
+
+    // Tasks List
+    examTasksList.innerHTML = yearData.tasks.map(task => {
+      const isSolved = state.solvedTasks.has(task.id);
+      return `
+        <article class="exam-task-card ${isSolved ? 'task-completed' : ''}" id="task-card-${task.id}">
+          <div class="task-card-header">
+            <div class="task-header-left">
+              <span class="task-badge-label">Aufgabe ${escapeHtml(task.label)}</span>
+              <span class="task-section-name">${escapeHtml(task.section)}</span>
+              <span class="task-points-pill">${task.points}</span>
+            </div>
+            <button class="task-complete-btn" data-taskid="${task.id}">
+              <span class="btn-check-icon">${isSolved ? '✓' : '○'}</span>
+              <span>${isSolved ? 'Als gelöst markiert' : 'Als gelöst abhaken'}</span>
+            </button>
+          </div>
+
+          <div class="task-topic-box">
+            <h3 class="task-topic-title">${escapeHtml(task.topic)}</h3>
+            <span class="task-tools-rule">Regel: <strong>${escapeHtml(task.hilfsmittel)}</strong></span>
+          </div>
+
+          <div class="task-guidance-box">
+            <div class="guidance-title">Lösungsansatz & mathematische Hinweise</div>
+            <p>${escapeHtml(task.tipp)}</p>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    // Attach checkbox listeners
+    examTasksList.querySelectorAll('.task-complete-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const taskId = btn.getAttribute('data-taskid');
+        toggleTaskSolved(taskId);
+      });
+    });
+
+    updateExamProgress();
+
+    // Show in-page view, hide years grid
+    inpageExamView.style.display = 'block';
+    document.getElementById('tab-jahre').style.display = 'none';
+
+    // Smooth scroll to top of in-page viewer or target task
+    if (targetTaskId) {
+      setTimeout(() => {
+        const el = document.getElementById(`task-card-${targetTaskId}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.classList.add('highlight-target');
+          setTimeout(() => el.classList.remove('highlight-target'), 2500);
+        }
+      }, 50);
+    } else {
+      inpageExamView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function closeInpageExamView(smoothScroll = true) {
+    inpageExamView.style.display = 'none';
+    const tabJahre = document.getElementById('tab-jahre');
+    if (state.currentTab === 'tab-jahre') {
+      tabJahre.style.display = 'block';
+    }
+    state.activeExamYear = null;
+    state.targetTaskId = null;
+    if (smoothScroll) {
+      window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 68, behavior: 'smooth' });
+    }
+  }
+
+  closeInpageViewBtn.addEventListener('click', () => {
+    closeInpageExamView(true);
+  });
+
+  function toggleTaskSolved(taskId) {
+    if (state.solvedTasks.has(taskId)) {
+      state.solvedTasks.delete(taskId);
+    } else {
+      state.solvedTasks.add(taskId);
+    }
+    localStorage.setItem('solved_tasks', JSON.stringify(Array.from(state.solvedTasks)));
+
+    // Re-render task card state
+    const card = document.getElementById(`task-card-${taskId}`);
+    if (card) {
+      const isSolved = state.solvedTasks.has(taskId);
+      card.classList.toggle('task-completed', isSolved);
+      const btn = card.querySelector('.task-complete-btn');
+      if (btn) {
+        btn.querySelector('.btn-check-icon').textContent = isSolved ? '✓' : '○';
+        btn.querySelector('span:last-child').textContent = isSolved ? 'Als gelöst markiert' : 'Als gelöst abhaken';
+      }
+    }
+
+    updateExamProgress();
+    renderYearsGrid(); // Update checkmarks on year cards
+  }
+
+  function updateExamProgress() {
+    if (!state.activeExamYear) return;
+    const yearData = YEARS_DATA.find(y => y.year === state.activeExamYear);
+    if (!yearData) return;
+
+    const total = yearData.tasks.length;
+    const solved = yearData.tasks.filter(t => state.solvedTasks.has(t.id)).length;
+    const pct = total > 0 ? Math.round((solved / total) * 100) : 0;
+
+    examProgressLabel.textContent = `${solved} / ${total} gelöst (${pct}%)`;
+    examProgressBar.style.width = `${pct}%`;
+  }
+
+  // ==========================================
+  // 6. Topics Accordion
   // ==========================================
   function renderTopicsAccordion() {
     const q = state.searchQuery;
@@ -258,21 +378,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filtered = TOPICS_DATA.filter(topic => {
       if (cat !== 'all' && topic.category !== cat) return false;
-
       if (!q) return true;
       if (topic.title.toLowerCase().includes(q)) return true;
       if (topic.category.toLowerCase().includes(q)) return true;
       if (topic.description.toLowerCase().includes(q)) return true;
       if (topic.tasks.some(t => t.label.toLowerCase().includes(q) || t.year.toString().includes(q))) return true;
-
       return false;
     });
 
     if (filtered.length === 0) {
       topicsAccordion.innerHTML = `
         <div style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
-          <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Keine Stoffgebiete gefunden</p>
-          <p>Für die Suchanfrage "${escapeHtml(q)}" wurden keine mathematischen Themen gefunden.</p>
+          <p style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.35rem;">Keine Stoffgebiete gefunden</p>
+          <p>Für "${escapeHtml(q)}" wurden keine Treffer erzielt.</p>
         </div>
       `;
       return;
@@ -281,22 +399,20 @@ document.addEventListener('DOMContentLoaded', () => {
     topicsAccordion.innerHTML = filtered.map(topic => {
       const isOpen = state.openTopics.has(topic.id) || (q.length > 0);
 
-      const tasksHtml = topic.tasks.map(task => `
-        <div class="topic-task-card">
-          <div class="task-matrix-left">
-            <span class="matrix-year">${task.year}</span>
-            <span class="matrix-label">${escapeHtml(task.label)}</span>
+      const tasksHtml = topic.tasks.map(task => {
+        const taskId = `${task.year}-${task.label.replace('/', '-')}`;
+        const isSolved = state.solvedTasks.has(taskId);
+
+        return `
+          <div class="topic-task-card" data-year="${task.year}" data-taskid="${taskId}">
+            <div class="task-matrix-left">
+              <span style="font-weight: 800; font-size: 0.95rem; margin-right: 0.5rem;">${task.year}</span>
+              <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-primary);">${isSolved ? '✓ ' : ''}${escapeHtml(task.label)}</span>
+            </div>
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Auf der Seite öffnen ↗</span>
           </div>
-          <div class="task-matrix-actions">
-            <a href="${escapeHtml(task.aufgabeUrl)}" target="_blank" rel="noopener" class="matrix-action-btn" title="Aufgabenblatt öffnen">
-              Aufgabe
-            </a>
-            <a href="${escapeHtml(task.loesungUrl)}" target="_blank" rel="noopener" class="matrix-action-btn" title="Musterlösung öffnen">
-              Lösung
-            </a>
-          </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
 
       return `
         <div class="topic-item ${isOpen ? 'open' : ''}" id="${topic.id}">
@@ -304,7 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="topic-title-group">
               <div class="topic-meta-row">
                 <span class="topic-category-tag">${escapeHtml(topic.category)}</span>
-                <span class="topic-tasks-count">${topic.taskCount} Prüfungsaufgaben</span>
+                <span class="topic-tasks-count">${topic.taskCount} Aufgaben</span>
               </div>
               <h3 class="topic-name">${escapeHtml(topic.title)}</h3>
               <p class="topic-description">${escapeHtml(topic.description)}</p>
@@ -317,14 +433,14 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="topic-body">
             <div class="topic-matrix-grid">
-              ${tasksHtml || '<span style="color:var(--text-muted);font-size:0.85rem;">Keine spezifischen Aufgaben erfasst</span>'}
+              ${tasksHtml || '<span style="color:var(--text-muted);font-size:0.85rem;">Keine Aufgaben erfasst</span>'}
             </div>
           </div>
         </div>
       `;
     }).join('');
 
-    // Accordion toggle listeners
+    // Toggle accordion
     topicsAccordion.querySelectorAll('.topic-header').forEach(header => {
       header.addEventListener('click', () => {
         const id = header.getAttribute('data-id');
@@ -338,6 +454,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
+
+    // Clicking a task inside a topic opens that year & task directly on the page!
+    topicsAccordion.querySelectorAll('.topic-task-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const yr = parseInt(card.getAttribute('data-year'), 10);
+        const taskId = card.getAttribute('data-taskid');
+        switchTab('tab-jahre');
+        openInpageExamView(yr, taskId);
+      });
+    });
   }
 
   topicCategoryFilter.addEventListener('change', (e) => {
@@ -346,7 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 6. Render Reforms Timeline
+  // 7. Reforms Timeline
   // ==========================================
   function renderReformsTimeline() {
     reformsContainer.innerHTML = REFORMS_DATA.map(item => `
@@ -365,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 7. Points Calculator
+  // 8. Points Calculator
   // ==========================================
   function updatePointsCalculator() {
     const a1 = parseFloat(calcA1.value) || 0;
@@ -379,13 +505,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = Math.min(50, Math.max(0, a1 + a2 + b));
     calcTotalPoints.textContent = total.toFixed(1);
 
-    // Official Baden-Württemberg grading scale for Realschule Abschlussprüfung (50 points maximum):
-    // Note 1 (Sehr gut): 46 - 50 Pkt
-    // Note 2 (Gut): 37.5 - 45.5 Pkt
-    // Note 3 (Befriedigend): 29 - 37 Pkt
-    // Note 4 (Ausreichend): 20 - 28.5 Pkt
-    // Note 5 (Mangelhaft): 10 - 19.5 Pkt
-    // Note 6 (Ungenügend): 0 - 9.5 Pkt
     let gradeText = '';
     let gradeColor = '#10b981';
 
@@ -419,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updatePointsCalculator();
 
   // ==========================================
-  // 8. Render Formulas Grid
+  // 9. Formulas Grid
   // ==========================================
   function renderFormulas() {
     formulasContainer.innerHTML = FORMULAS_DATA.map(cat => `
@@ -439,10 +558,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 9. Random Task Generator
+  // 10. Random Task Generator
   // ==========================================
   function initRandomTaskGenerator() {
-    // Populate select
     TOPICS_DATA.forEach(t => {
       const opt = document.createElement('option');
       opt.value = t.id;
@@ -450,7 +568,6 @@ document.addEventListener('DOMContentLoaded', () => {
       randomTopicSelect.appendChild(opt);
     });
 
-    // Default display
     drawRandomTask();
 
     rollRandomBtn.addEventListener('click', () => {
@@ -478,101 +595,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (pool.length === 0) {
-      randomTaskDisplay.innerHTML = `<div class="random-empty-state">Keine Aufgaben für diesen Filter gefunden.</div>`;
+      randomTaskDisplay.innerHTML = `<div style="color:var(--text-muted);">Keine Aufgaben für diesen Filter vorhanden.</div>`;
       return;
     }
 
     const randomItem = pool[Math.floor(Math.random() * pool.length)];
+    const taskId = `${randomItem.year}-${randomItem.label.replace('/', '-')}`;
 
     randomTaskDisplay.innerHTML = `
       <div class="drawn-task-year">Prüfung ${randomItem.year}</div>
       <div class="drawn-task-label">Aufgabe ${escapeHtml(randomItem.label)}</div>
-      <div class="drawn-task-topic">Stoffgebiet: <strong>${escapeHtml(randomItem.topicTitle)}</strong> (${escapeHtml(randomItem.topicCat)})</div>
-      <div class="drawn-task-actions">
-        <a href="${escapeHtml(randomItem.aufgabeUrl)}" target="_blank" rel="noopener" class="card-btn primary">
-          Aufgabenblatt öffnen ↗
-        </a>
-        <a href="${escapeHtml(randomItem.loesungUrl)}" target="_blank" rel="noopener" class="card-btn secondary">
-          Musterlösung ansehen ↗
-        </a>
-      </div>
-    `;
-  }
-
-  // ==========================================
-  // 10. Modal Drawer
-  // ==========================================
-  function openTaskModal(task) {
-    modalBodyContent.innerHTML = `
-      <span class="modal-header-tag">Realschulprüfung Baden-Württemberg</span>
-      <h2 class="modal-title">Jahrgang ${task.year} · Aufgabe ${escapeHtml(task.label)}</h2>
-      <p class="modal-subtitle">Wähle die gewünschte Ansicht auf walterbauer.net:</p>
-
-      <div class="modal-action-buttons">
-        <a href="${escapeHtml(task.taskUrl)}" target="_blank" rel="noopener" class="modal-link-card">
-          <div class="modal-link-left">
-            <div class="modal-icon-badge">📄</div>
-            <div class="modal-link-text">
-              <span class="modal-link-title">Aufgabenstellung (Aufgabe ${escapeHtml(task.label)})</span>
-              <span class="modal-link-desc">Offizieller Aufgabentext mit Zeichnungen & Maßangaben</span>
-            </div>
-          </div>
-          <span style="font-weight:700;color:var(--accent-primary);">Öffnen ↗</span>
-        </a>
-
-        <a href="${escapeHtml(task.loesungUrl)}" target="_blank" rel="noopener" class="modal-link-card">
-          <div class="modal-link-left">
-            <div class="modal-icon-badge" style="background:rgba(16,185,129,0.15);color:#10b981;">💡</div>
-            <div class="modal-link-text">
-              <span class="modal-link-title">Ausführliche Musterlösung</span>
-              <span class="modal-link-desc">Schritt-für-Schritt Rechenweg & Lösungsskizze</span>
-            </div>
-          </div>
-          <span style="font-weight:700;color:#10b981;">Öffnen ↗</span>
-        </a>
-
-        <a href="${escapeHtml(task.pageUrl)}" target="_blank" rel="noopener" class="modal-link-card">
-          <div class="modal-link-left">
-            <div class="modal-icon-badge" style="background:rgba(245,158,11,0.15);color:#f59e0b;">🧭</div>
-            <div class="modal-link-text">
-              <span class="modal-link-title">Aufgaben-Navigationsseite</span>
-              <span class="modal-link-desc">Direktseite der Teilaufgabe auf walterbauer.net</span>
-            </div>
-          </div>
-          <span style="font-weight:700;color:#f59e0b;">Öffnen ↗</span>
-        </a>
-
-        <a href="http://www.walterbauer.net/${task.year}_uebersicht.html" target="_blank" rel="noopener" class="modal-link-card">
-          <div class="modal-link-left">
-            <div class="modal-icon-badge" style="background:rgba(148,163,184,0.15);color:#94a3b8;">📚</div>
-            <div class="modal-link-text">
-              <span class="modal-link-title">Komplette Prüfung ${task.year} (Übersicht)</span>
-              <span class="modal-link-desc">Alle Pflicht- und Wahlaufgaben des Prüfungsjahrgangs</span>
-            </div>
-          </div>
-          <span style="font-weight:700;color:var(--text-secondary);">Öffnen ↗</span>
-        </a>
-      </div>
+      <div class="drawn-task-topic">Stoffgebiet: <strong>${escapeHtml(randomItem.topicTitle)}</strong></div>
+      <button class="primary-btn" id="open-random-inpage-btn" style="margin-top: 1rem;">
+        Aufgabe direkt auf der Seite öffnen ↗
+      </button>
     `;
 
-    taskModal.style.display = 'flex';
+    document.getElementById('open-random-inpage-btn').addEventListener('click', () => {
+      switchTab('tab-jahre');
+      openInpageExamView(randomItem.year, taskId);
+    });
   }
 
-  function closeTaskModal() {
-    taskModal.style.display = 'none';
-  }
-
-  modalCloseBtn.addEventListener('click', closeTaskModal);
-  taskModal.addEventListener('click', (e) => {
-    if (e.target === taskModal) closeTaskModal();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeTaskModal();
-  });
-
-  // ==========================================
-  // Helper functions
-  // ==========================================
+  // Helper
   function escapeHtml(str) {
     if (!str) return '';
     return str

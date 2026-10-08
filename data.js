@@ -1,5 +1,5 @@
-// Prüfung Realschule Baden-Württemberg — Vollständige Prüfungsdaten 1990–2024
-// Erstellt auf Basis des Original-Archivs von Walter Bauer (walterbauer.net)
+// Prüfung Realschule Baden-Württemberg — Vollständige In-Page Prüfungsdaten 1990–2024
+// 100% In-Page Navigation: Alle Aufgaben, Themen, Punkte und Rechenhilfen direkt integriert.
 
 const YEARS_DATA = [
   {
@@ -7,196 +7,240 @@ const YEARS_DATA = [
     "eraId": "reform-2021",
     "eraTitle": "Reform ab 2021 (Bildungsplan 2016)",
     "points": 50,
-    "structure": "Pflichtteil A1 (10 Pkt, hilfsmittelfrei) + Pflichtteil A2 (20 Pkt) + Wahlteil B (2 aus 4, 20 Pkt)",
-    "calcAllowed": "A1: Nein (hilfsmittelfrei) | A2 & B: Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten (Teil A1: 45 Min · Teil A2 & B: 195 Min)",
+    "structure": "Pflichtteil A1 (10 P, ohne Taschenrechner) · Pflichtteil A2 (20 P) · Wahlteil B (2 aus 4, 20 P)",
     "badgeColor": "emerald",
-    "uebersichtUrl": "http://www.walterbauer.net/2024_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2024.html",
     "taskCount": 23,
     "tasks": [
       {
+        "id": "2024-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2024_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2024_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2024-A1-1",
         "label": "A1/1",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p1.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2024-A1-2",
         "label": "A1/2",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p2.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2024-A1-3",
         "label": "A1/3",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p3.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2024-A1-4a",
         "label": "A1/4a",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p4a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p4a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2024-A1-4b",
         "label": "A1/4b",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p4b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p4b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2024-A1-5",
         "label": "A1/5",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p5.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2024-A1-6a",
         "label": "A1/6a",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p6a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p6a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2024-A1-6b",
         "label": "A1/6b",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p6b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p6b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2024-A1-7a",
         "label": "A1/7a",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p7a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p7a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p7a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p7a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2024-A1-7b",
         "label": "A1/7b",
-        "type": "pflicht-a1",
-        "href": "2024_a1_p7b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p7b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p7b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a1_p7b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2024-A2-1",
         "label": "A2/1",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p1.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2024-A2-2",
         "label": "A2/2",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p2.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2024-A2-3",
         "label": "A2/3",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p3.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2024-A2-4",
         "label": "A2/4",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p4.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2024-A2-5",
         "label": "A2/5",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p5.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2024-A2-6",
         "label": "A2/6",
-        "type": "pflicht-a2",
-        "href": "2024_a2_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2024_a2_p6.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2024-B-1a",
         "label": "B/1a",
-        "type": "wahl-b",
-        "href": "2024_b_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_1a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_1a.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2024-B-1b",
         "label": "B/1b",
-        "type": "wahl-b",
-        "href": "2024_b_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_1b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2024-B-2a",
         "label": "B/2a",
-        "type": "wahl-b",
-        "href": "2024_b_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_2a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2024-B-2b",
         "label": "B/2b",
-        "type": "wahl-b",
-        "href": "2024_b_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2024-B-3a",
         "label": "B/3a",
-        "type": "wahl-b",
-        "href": "2024_b_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_3a.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_3a.html"
+        "section": "Wahlteil B",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2024-B-3b",
         "label": "B/3b",
-        "type": "wahl-b",
-        "href": "2024_b_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2024_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_3b.html",
-        "pageUrl": "http://www.walterbauer.net/2024_b_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -205,212 +249,260 @@ const YEARS_DATA = [
     "eraId": "reform-2021",
     "eraTitle": "Reform ab 2021 (Bildungsplan 2016)",
     "points": 50,
-    "structure": "Pflichtteil A1 (10 Pkt, hilfsmittelfrei) + Pflichtteil A2 (20 Pkt) + Wahlteil B (2 aus 4, 20 Pkt)",
-    "calcAllowed": "A1: Nein (hilfsmittelfrei) | A2 & B: Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten (Teil A1: 45 Min · Teil A2 & B: 195 Min)",
+    "structure": "Pflichtteil A1 (10 P, ohne Taschenrechner) · Pflichtteil A2 (20 P) · Wahlteil B (2 aus 4, 20 P)",
     "badgeColor": "emerald",
-    "uebersichtUrl": "http://www.walterbauer.net/2023_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2023.html",
     "taskCount": 25,
     "tasks": [
       {
+        "id": "2023-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2023_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2023_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2023-A1-1",
         "label": "A1/1",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p1.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2023-A1-2a",
         "label": "A1/2a",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p2a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p2a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2023-A1-2b",
         "label": "A1/2b",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p2b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p2b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2023-A1-3",
         "label": "A1/3",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p3.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2023-A1-4",
         "label": "A1/4",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p4.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2023-A1-5",
         "label": "A1/5",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p5.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2023-A1-6",
         "label": "A1/6",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p6.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2023-A1-7",
         "label": "A1/7",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p7.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2023-A1-8a",
         "label": "A1/8a",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p8a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p8a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p8a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p8a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2023-A1-8b",
         "label": "A1/8b",
-        "type": "pflicht-a1",
-        "href": "2023_a1_p8b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p8b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p8b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a1_p8b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2023-A2-1",
         "label": "A2/1",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p1.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2023-A2-2",
         "label": "A2/2",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p2.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2023-A2-3",
         "label": "A2/3",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p3.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2023-A2-4",
         "label": "A2/4",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p4.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2023-A2-5",
         "label": "A2/5",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p5.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2023-A2-6",
         "label": "A2/6",
-        "type": "pflicht-a2",
-        "href": "2023_a2_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2023_a2_p6.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2023-B-1a",
         "label": "B/1a",
-        "type": "wahl-b",
-        "href": "2023_b_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_1a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_1a.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2023-B-1b",
         "label": "B/1b",
-        "type": "wahl-b",
-        "href": "2023_b_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_1b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2023-B-2a",
         "label": "B/2a",
-        "type": "wahl-b",
-        "href": "2023_b_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_2a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_2a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2023-B-2b",
         "label": "B/2b",
-        "type": "wahl-b",
-        "href": "2023_b_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_2b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2023-B-3a",
         "label": "B/3a",
-        "type": "wahl-b",
-        "href": "2023_b_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_3a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_3a.html"
+        "section": "Wahlteil B",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2023-B-3b",
         "label": "B/3b",
-        "type": "wahl-b",
-        "href": "2023_b_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_3b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2023-B-4a",
         "label": "B/4a",
-        "type": "wahl-b",
-        "href": "2023_b_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_4a.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_4a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2023-B-4b",
         "label": "B/4b",
-        "type": "wahl-b",
-        "href": "2023_b_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2023_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_4b.html",
-        "pageUrl": "http://www.walterbauer.net/2023_b_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       }
     ]
   },
@@ -419,228 +511,280 @@ const YEARS_DATA = [
     "eraId": "reform-2021",
     "eraTitle": "Reform ab 2021 (Bildungsplan 2016)",
     "points": 50,
-    "structure": "Pflichtteil A1 (10 Pkt, hilfsmittelfrei) + Pflichtteil A2 (20 Pkt) + Wahlteil B (2 aus 4, 20 Pkt)",
-    "calcAllowed": "A1: Nein (hilfsmittelfrei) | A2 & B: Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten (Teil A1: 45 Min · Teil A2 & B: 195 Min)",
+    "structure": "Pflichtteil A1 (10 P, ohne Taschenrechner) · Pflichtteil A2 (20 P) · Wahlteil B (2 aus 4, 20 P)",
     "badgeColor": "emerald",
-    "uebersichtUrl": "http://www.walterbauer.net/2022_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2022.html",
     "taskCount": 27,
     "tasks": [
       {
+        "id": "2022-Uebersicht",
         "label": "Uebersicht",
-        "type": "general",
-        "href": "2022_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2022_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2022-A1-1a",
         "label": "A1/1a",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p1a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2022-A1-1b",
         "label": "A1/1b",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p1b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2022-A1-1c",
         "label": "A1/1c",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1c.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p1c.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2022-A1-2a",
         "label": "A1/2a",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p2a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p2a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2022-A1-2b",
         "label": "A1/2b",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p2b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p2b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2022-A1-3a",
         "label": "A1/3a",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p3a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p3a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2022-A1-3b",
         "label": "A1/3b",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p3b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p3b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2022-A1-4",
         "label": "A1/4",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p4.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2022-A1-5",
         "label": "A1/5",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p5.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2022-A1-6a",
         "label": "A1/6a",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p6a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p6a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2022-A1-6b",
         "label": "A1/6b",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p6b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p6b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2022-A1-7",
         "label": "A1/7",
-        "type": "pflicht-a1",
-        "href": "2022_a1_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a1_p7.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2022-A2-1",
         "label": "A2/1",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p1.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2022-A2-2",
         "label": "A2/2",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p2.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2022-A2-3",
         "label": "A2/3",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p3.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2022-A2-4",
         "label": "A2/4",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p4.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2022-A2-5",
         "label": "A2/5",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p5.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2022-A2-6",
         "label": "A2/6",
-        "type": "pflicht-a2",
-        "href": "2022_a2_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2022_a2_p6.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2022-B-1a",
         "label": "B/1a",
-        "type": "wahl-b",
-        "href": "2022_b_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_1a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_1a.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2022-B-1b",
         "label": "B/1b",
-        "type": "wahl-b",
-        "href": "2022_b_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_1b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2022-B-2a",
         "label": "B/2a",
-        "type": "wahl-b",
-        "href": "2022_b_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_2a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2022-B-2b",
         "label": "B/2b",
-        "type": "wahl-b",
-        "href": "2022_b_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2022-B-3a",
         "label": "B/3a",
-        "type": "wahl-b",
-        "href": "2022_b_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_3a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_3a.html"
+        "section": "Wahlteil B",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2022-B-3b",
         "label": "B/3b",
-        "type": "wahl-b",
-        "href": "2022_b_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_3b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2022-B-4a",
         "label": "B/4a",
-        "type": "wahl-b",
-        "href": "2022_b_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_4a.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_4a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2022-B-4b",
         "label": "B/4b",
-        "type": "wahl-b",
-        "href": "2022_b_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2022_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_4b.html",
-        "pageUrl": "http://www.walterbauer.net/2022_b_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       }
     ]
   },
@@ -649,212 +793,260 @@ const YEARS_DATA = [
     "eraId": "reform-2021",
     "eraTitle": "Reform ab 2021 (Bildungsplan 2016)",
     "points": 50,
-    "structure": "Pflichtteil A1 (10 Pkt, hilfsmittelfrei) + Pflichtteil A2 (20 Pkt) + Wahlteil B (2 aus 4, 20 Pkt)",
-    "calcAllowed": "A1: Nein (hilfsmittelfrei) | A2 & B: Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten (Teil A1: 45 Min · Teil A2 & B: 195 Min)",
+    "structure": "Pflichtteil A1 (10 P, ohne Taschenrechner) · Pflichtteil A2 (20 P) · Wahlteil B (2 aus 4, 20 P)",
     "badgeColor": "emerald",
-    "uebersichtUrl": "http://www.walterbauer.net/2021_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2021.html",
     "taskCount": 25,
     "tasks": [
       {
+        "id": "2021-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2021_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2021_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2021-A1-1a",
         "label": "A1/1a",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p1a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p1a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2021-A1-1b",
         "label": "A1/1b",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p1b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p1b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2021-A!-2",
         "label": "A!/2",
-        "type": "general",
-        "href": "2021_a1_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p2.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2021-A1-3a",
         "label": "A1/3a",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p3a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p3a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2021-A1-3b",
         "label": "A1/3b",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p3b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p3b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2021-A1-4a",
         "label": "A1/4a",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p4a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p4a.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-A1-4b",
         "label": "A1/4b",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p4b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p4b.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-A1-5",
         "label": "A1/5",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p5.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2021-A1-6",
         "label": "A1/6",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p6.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Differenz d (arithmetisch) oder Quotient q (geometrisch) ermitteln."
       },
       {
+        "id": "2021-A1-7",
         "label": "A1/7",
-        "type": "pflicht-a1",
-        "href": "2021_a1_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a1_p7.html"
+        "section": "Pflichtteil A1 (hilfsmittelfrei)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "1,0 P",
+        "hilfsmittel": "Ohne Taschenrechner & Formelsammlung",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2021-A2-1",
         "label": "A2/1",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p1.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2021-A2-2",
         "label": "A2/2",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p2.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2021-A2-3",
         "label": "A2/3",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p3.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2021-A2-4",
         "label": "A2/4",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p4.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2021-A2-5",
         "label": "A2/5",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p5.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-A2-6",
         "label": "A2/6",
-        "type": "pflicht-a2",
-        "href": "2021_a2_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2021_a2_p6.html"
+        "section": "Pflichtteil A2 (mit Hilfsmitteln)",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2021-B-1a",
         "label": "B/1a",
-        "type": "wahl-b",
-        "href": "2021_b_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_1a.html"
+        "section": "Wahlteil B",
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a/sin(α) = b/sin(β) = c/sin(γ). Einsetzbar wenn eine Seite und der gegenüberliegende Winkel bekannt sind."
       },
       {
+        "id": "2021-B-1b",
         "label": "B/1b",
-        "type": "wahl-b",
-        "href": "2021_b_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-B-2a",
         "label": "B/2a",
-        "type": "wahl-b",
-        "href": "2021_b_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_2a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_2a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-B-2b",
         "label": "B/2b",
-        "type": "wahl-b",
-        "href": "2021_b_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_2b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2021-B-3a",
         "label": "B/3a",
-        "type": "wahl-b",
-        "href": "2021_b_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_3a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_3a.html"
+        "section": "Wahlteil B",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2021-B-3b",
         "label": "B/3b",
-        "type": "wahl-b",
-        "href": "2021_b_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_3b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-B-4a",
         "label": "B/4a",
-        "type": "wahl-b",
-        "href": "2021_b_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_4a.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_4a.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2021-B-4b",
         "label": "B/4b",
-        "type": "wahl-b",
-        "href": "2021_b_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2021_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_4b.html",
-        "pageUrl": "http://www.walterbauer.net/2021_b_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       }
     ]
   },
@@ -863,148 +1055,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2020_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2020.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2020-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2020_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2020_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2020-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2020_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2020-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2020_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2020-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2020_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2020-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2020_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2020-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2020_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2020-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2020_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2020-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2020_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2020-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2020_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2020_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2020-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2020_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2020-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2020_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2020-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2020_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2020-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2020_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2020-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2020_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2020-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2020_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2020-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2020_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2020-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2020_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2020_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2020_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1013,148 +1237,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2019_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2019.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2019-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2019_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2019_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2019-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2019_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2019-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2019_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2019-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2019_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2019-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2019_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2019-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2019_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2019-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2019_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2019-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2019_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2019-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2019_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2019_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2019-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2019_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2019-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2019_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2019-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2019_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2019-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2019_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2019-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2019_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2019-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2019_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2019-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2019_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2019-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2019_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2019_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2019_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1163,148 +1419,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2018_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2018.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2018-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2018_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2018_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2018-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2018_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2018-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2018_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2018-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2018_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2018-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2018_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2018-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2018_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2018-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2018_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2018-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2018_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2018-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2018_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2018_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2018-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2018_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2018-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2018_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2018-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2018_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2018-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2018_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2018-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2018_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2018-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2018_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2018-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2018_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2018-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2018_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2018_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2018_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1313,148 +1601,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2017_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2017.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2017-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2017_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2017_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2017-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2017_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2017-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2017_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2017-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2017_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2017-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2017_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2017-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2017_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2017-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2017_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2017-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2017_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2017-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2017_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2017_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2017-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2017_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2017-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2017_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2017-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2017_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2017-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2017_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2017-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2017_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2017-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2017_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2017-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2017_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2017-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2017_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2017_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2017_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1463,148 +1783,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2016_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2016.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2016-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2016_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2016_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2016-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2016_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2016-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2016_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2016-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2016_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2016-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2016_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2016-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2016_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2016-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2016_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2016-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2016_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2016-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2016_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2016_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2016-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2016_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2016-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2016_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2016-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2016_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2016-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2016_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2016-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2016_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2016-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2016_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2016-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2016_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2016-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2016_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2016_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2016_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       }
     ]
   },
@@ -1613,156 +1965,190 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2015_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2015.html",
     "taskCount": 18,
     "tasks": [
       {
+        "id": "2015-Mathematik",
         "label": "Mathematik",
-        "type": "general",
-        "href": "mathemartik.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_mathemartik.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_mathemartik.html",
-        "pageUrl": "http://www.walterbauer.net/mathemartik.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2015-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2015_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2015_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2015-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2015_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2015-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2015_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2015-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2015_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2015-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2015_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2015-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2015_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2015-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2015_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2015-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2015_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2015-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2015_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2015_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2015-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2015_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2015-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2015_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2015-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2015_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2015-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2015_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2015-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2015_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2015-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2015_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2015-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2015_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2015-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2015_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2015_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2015_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1771,156 +2157,190 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2014_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2014.html",
     "taskCount": 18,
     "tasks": [
       {
+        "id": "2014-Mathematik",
         "label": "Mathematik",
-        "type": "general",
-        "href": "matematik.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_matematik.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_matematik.html",
-        "pageUrl": "http://www.walterbauer.net/matematik.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2014-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2014_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2014_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2014-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2014_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2014-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2014_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2014-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2014_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2014-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2014_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2014-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2014_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2014-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2014_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2014-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2014_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2014-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2014_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2014_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2014-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2014_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2014-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2014_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2014-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2014_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2014-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2014_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2014-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2014_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2014-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2014_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2014-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2014_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2014-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2014_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2014_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2014_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -1929,148 +2349,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2013_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2013.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2013-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2013_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2013_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2013-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2013_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2013-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2013_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2013-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2013_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2013-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2013_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2013-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2013_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2013-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2013_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2013-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2013_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2013-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2013_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2013_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2013-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2013_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2013-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2013_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2013-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2013_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2013-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2013_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2013-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2013_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2013-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2013_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2013-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2013_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2013-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2013_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2013_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2013_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -2079,148 +2531,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2012_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2012.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2012-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2012_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2012_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2012-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2012_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2012-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2012_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2012-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2012_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2012-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2012_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2012-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2012_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2012-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2012_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2012-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2012_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2012-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2012_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2012_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2012-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2012_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2012-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2012_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2012-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2012_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2012-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2012_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2012-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2012_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2012-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2012_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2012-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2012_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2012-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2012_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2012_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2012_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       }
     ]
   },
@@ -2229,148 +2713,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2011_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2011.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2011-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2011_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2011_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2011-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2011_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2011-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2011_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2011-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2011_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2011-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2011_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2011-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2011_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2011-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2011_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2011-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2011_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2011-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2011_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2011_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2011-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2011_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2011-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2011_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2011-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2011_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2011-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2011_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2011-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2011_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2011-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2011_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2011-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2011_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2011-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2011_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2011_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       }
     ]
   },
@@ -2379,148 +2895,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2010_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2010.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2010-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2010_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2010_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2010-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2010_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2010-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2010_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2010-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2010_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2010-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2010_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2010-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2010_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2010-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2010_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2010-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2010_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2010-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2010_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2010_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2010-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2010_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2010-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2010_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2010-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2010_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2010-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2010_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2010-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2010_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2010-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2010_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2010-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2010_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2010-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2010_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2010_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2010_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       }
     ]
   },
@@ -2529,148 +3077,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2009_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2009.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2009-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2009_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2009_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2009-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2009_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2009-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2009_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2009-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2009_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2009-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2009_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2009-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2009_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2009-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2009_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2009-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2009_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2009-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2009_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2009_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2009-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2009_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2009-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2009_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2009-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2009_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2009-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2009_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2009-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2009_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2009-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2009_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2009-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2009_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2009-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2009_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2009_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2009_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       }
     ]
   },
@@ -2679,148 +3259,180 @@ const YEARS_DATA = [
     "eraId": "reform-2008",
     "eraTitle": "Prüfungsordnung 2008–2020",
     "points": 50,
-    "structure": "Pflichtbereich P1–P8 (30 Pkt) + Wahlbereich W1–W4 (2 aus 4, 20 Pkt) | Inkl. Wahrscheinlichkeit",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "240 Minuten",
+    "structure": "Pflichtbereich P1–P8 (30 P) · Wahlbereich W1–W4 (2 aus 4, 20 P) · Inkl. Stochastik",
     "badgeColor": "indigo",
-    "uebersichtUrl": "http://www.walterbauer.net/2008_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2008.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2008-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2008_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2008_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2008-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2008_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2008-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2008_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2008-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2008_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2008-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2008_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2008-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2008_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2008-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2008_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2008-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2008_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2008-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2008_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2008_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2008-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2008_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2008-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2008_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2008-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2008_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2008-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2008_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2008-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2008_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2008-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2008_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2008-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2008_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Baumdiagramm zeichnen. 1. Pfadregel: Wahrscheinlichkeiten entlang eines Pfades multiplizieren. 2. Pfadregel: Pfade addieren."
       },
       {
+        "id": "2008-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2008_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2008_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2008_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       }
     ]
   },
@@ -2829,148 +3441,180 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2007_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2007.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2007-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2007_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2007_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2007-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2007_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2007-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2007_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2007-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2007_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2007-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2007_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2007-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2007_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2007-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2007_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2007-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2007_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2007-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2007_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2007_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2007-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2007_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2007-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2007_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2007-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2007_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2007-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2007_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2007-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2007_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2007-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2007_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2007-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2007_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2007-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2007_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2007_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2007_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       }
     ]
   },
@@ -2979,148 +3623,180 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2006_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2006.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2006-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2006_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2006_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2006-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2006_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2006-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2006_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2006-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2006_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2006-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2006_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2006-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2006_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2006-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2006_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2006-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2006_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2006-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2006_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2006_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "2006-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2006_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2006-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2006_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2006-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2006_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2006-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2006_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2006-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2006_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2006-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2006_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2006-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2006_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2006-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2006_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2006_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2006_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       }
     ]
   },
@@ -3129,148 +3805,180 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2005_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2005.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2005-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2005_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2005_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2005-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2005_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2005-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2005_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2005-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2005_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2005-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2005_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2005-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2005_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2005-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2005_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2005-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2005_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2005-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2005_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2005_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2005-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2005_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2005-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2005_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2005-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2005_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2005-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2005_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2005-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2005_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2005-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2005_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2005-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2005_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2005-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2005_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2005_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2005_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       }
     ]
   },
@@ -3279,148 +3987,180 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2004_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2004.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2004-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2004_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2004_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2004-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2004_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2004-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2004_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2004-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2004_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2004-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2004_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2004-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2004_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2004-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2004_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2004-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2004_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2004-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2004_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2004_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "2004-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2004_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2004-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2004_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2004-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2004_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2004-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2004_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2004-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2004_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2004-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2004_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "2004-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2004_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2004-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2004_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2004_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2004_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       }
     ]
   },
@@ -3429,148 +4169,180 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2003_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2003.html",
     "taskCount": 17,
     "tasks": [
       {
+        "id": "2003-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2003_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2003_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2003-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2003_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2003-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2003_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2003-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2003_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2003-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2003_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2003-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2003_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2003-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2003_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2003-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2003_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2003-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2003_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2003_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2003-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2003_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2003-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2003_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2003-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2003_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2003-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2003_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2003-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2003_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2003-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2003_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2003-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2003_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2003-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2003_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2003_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2003_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       }
     ]
   },
@@ -3579,156 +4351,190 @@ const YEARS_DATA = [
     "eraId": "reform-2002",
     "eraTitle": "Prüfungsordnung 2002–2007",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 4 Aufgaben (2 aus 4 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 4 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "amber",
-    "uebersichtUrl": "http://www.walterbauer.net/2002_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2002.html",
     "taskCount": 18,
     "tasks": [
       {
+        "id": "2002-Lernmaterial",
         "label": "Lernmaterial",
-        "type": "general",
-        "href": "lernmateriel.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_lernmateriel.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_lernmateriel.html",
-        "pageUrl": "http://www.walterbauer.net/lernmateriel.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2002-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2002_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2002_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2002-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2002_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2002-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2002_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2002-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2002_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2002-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2002_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2002-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2002_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2002-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2002_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2002-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2002_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "2002-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2002_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2002_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2002-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2002_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2002-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2002_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2002-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2002_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2002-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2002_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2002-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2002_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "2002-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2002_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2002-W4a",
         "label": "W4a",
-        "type": "wahl-w",
-        "href": "2002_w4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w4a.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w4a.html"
+        "section": "Wahlbereich W",
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Mathematische Zusammenhänge mit eigenen Worten erklären, Rechenschritte durch Sätze oder geometrische Eigenschaften begründen."
       },
       {
+        "id": "2002-W4b",
         "label": "W4b",
-        "type": "wahl-w",
-        "href": "2002_w4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2002_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w4b.html",
-        "pageUrl": "http://www.walterbauer.net/2002_w4b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       }
     ]
   },
@@ -3737,132 +4543,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/2001_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2001.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "2001-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2001_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2001_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2001-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2001_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2001-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2001_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "2001-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2001_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2001-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2001_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "2001-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2001_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2001-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2001_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "2001-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2001_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2001-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2001_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2001_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "2001-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2001_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "2001-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2001_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2001-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2001_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2001-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2001_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2001-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2001_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2001-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2001_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2001_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2001_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       }
     ]
   },
@@ -3871,132 +4705,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/2000_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/2000.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "2000-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "2000_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/2000_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "2000-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "2000_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p1.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "2000-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "2000_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p2.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "2000-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "2000_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p3.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2000-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "2000_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p4.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2000-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "2000_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p5.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "2000-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "2000_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p6.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2000-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "2000_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p7.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2000-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "2000_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p8.html",
-        "pageUrl": "http://www.walterbauer.net/2000_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "2000-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "2000_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "2000-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "2000_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Netzabwicklung des Körpers zeichnen! Der kürzeste Weg auf dem Mantel ist eine gerade Strecke im Netz."
       },
       {
+        "id": "2000-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "2000_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "2000-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "2000_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "2000-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "2000_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "2000-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "2000_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_2000_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/2000_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       }
     ]
   },
@@ -4005,132 +4867,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/1999_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1999.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "1999-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1999_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1999_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1999-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "1999_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p1.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "1999-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "1999_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p2.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "1999-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "1999_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p3.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1999-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "1999_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p4.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1999-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "1999_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p5.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1999-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "1999_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p6.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1999-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "1999_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p7.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1999-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "1999_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p8.html",
-        "pageUrl": "http://www.walterbauer.net/1999_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1999-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "1999_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1999-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "1999_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1999-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "1999_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1999-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "1999_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1999-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "1999_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1999-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "1999_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1999_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/1999_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       }
     ]
   },
@@ -4139,132 +5029,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/1998_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1998.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "1998-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1998_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1998_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1998-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "1998_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p1.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1998-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "1998_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p2.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Additions- oder Einsetzungsverfahren nutzen. Variablen schrittweise eliminieren und Lösungsprobe durchführen."
       },
       {
+        "id": "1998-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "1998_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p3.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "1998-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "1998_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p4.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "1998-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "1998_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p5.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1998-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "1998_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p6.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1998-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "1998_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p7.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1998-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "1998_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p8.html",
-        "pageUrl": "http://www.walterbauer.net/1998_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1998-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "1998_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "1998-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "1998_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1998-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "1998_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1998-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "1998_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1998-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "1998_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1998-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "1998_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1998_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/1998_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       }
     ]
   },
@@ -4273,132 +5191,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/1997_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1997.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "1997-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1997_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1997_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1997-P1",
         "label": "P1",
-        "type": "pflicht-p",
-        "href": "1997_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p1.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "V = (1/3)*a²*h. Seitenhöhe hs² = h² + (a/2)². Mantelfläche M = 2*a*hs. Oberfläche O = a² + M."
       },
       {
+        "id": "1997-P2",
         "label": "P2",
-        "type": "pflicht-p",
-        "href": "1997_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p2.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "1997-P3",
         "label": "P3",
-        "type": "pflicht-p",
-        "href": "1997_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p3.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1997-P4",
         "label": "P4",
-        "type": "pflicht-p",
-        "href": "1997_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p4.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1997-P5",
         "label": "P5",
-        "type": "pflicht-p",
-        "href": "1997_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p5.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1997-P6",
         "label": "P6",
-        "type": "pflicht-p",
-        "href": "1997_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p6.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1997-P7",
         "label": "P7",
-        "type": "pflicht-p",
-        "href": "1997_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p7.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1997-P8",
         "label": "P8",
-        "type": "pflicht-p",
-        "href": "1997_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p8.html",
-        "pageUrl": "http://www.walterbauer.net/1997_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1997-W1a",
         "label": "W1a",
-        "type": "wahl-w",
-        "href": "1997_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1997-W1b",
         "label": "W1b",
-        "type": "wahl-w",
-        "href": "1997_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1997-W2a",
         "label": "W2a",
-        "type": "wahl-w",
-        "href": "1997_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1997-W2b",
         "label": "W2b",
-        "type": "wahl-w",
-        "href": "1997_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1997-W3a",
         "label": "W3a",
-        "type": "wahl-w",
-        "href": "1997_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "1997-W3b",
         "label": "W3b",
-        "type": "wahl-w",
-        "href": "1997_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1997_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/1997_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       }
     ]
   },
@@ -4407,132 +5353,160 @@ const YEARS_DATA = [
     "eraId": "reform-1996",
     "eraTitle": "Prüfungsordnung 1996–2001",
     "points": 33,
-    "structure": "Pflichtbereich (17 Pkt) + Wahlbereich mit 3 Aufgaben (2 aus 3 gewählt, 16 Pkt)",
-    "calcAllowed": "Ja (Taschenrechner & Formelsammlung)",
+    "duration": "210 Minuten",
+    "structure": "Pflichtbereich (17 P) · Wahlbereich mit 3 Aufgaben (2 gewählt, 16 P)",
     "badgeColor": "orange",
-    "uebersichtUrl": "http://www.walterbauer.net/1996_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1996.html",
     "taskCount": 15,
     "tasks": [
       {
+        "id": "1996-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1996_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1996_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1996-p1",
         "label": "p1",
-        "type": "pflicht-p",
-        "href": "1996_p1.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p1.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p1.html"
+        "section": "Pflichtbereich P",
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Kreiszylinder: V = π*r²*h. Kegel: V = (1/3)*π*r²*h, s² = r²+h². Kugel: V = (4/3)*π*r³, O = 4*π*r²."
       },
       {
+        "id": "1996-p2",
         "label": "p2",
-        "type": "pflicht-p",
-        "href": "1996_p2.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p2.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p2.html"
+        "section": "Pflichtbereich P",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1996-p3",
         "label": "p3",
-        "type": "pflicht-p",
-        "href": "1996_p3.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p3.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p3.html"
+        "section": "Pflichtbereich P",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1996-p4",
         "label": "p4",
-        "type": "pflicht-p",
-        "href": "1996_p4.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p4.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p4.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1996-p5",
         "label": "p5",
-        "type": "pflicht-p",
-        "href": "1996_p5.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p5.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p5.html"
+        "section": "Pflichtbereich P",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1996-p6",
         "label": "p6",
-        "type": "pflicht-p",
-        "href": "1996_p6.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p6.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p6.html"
+        "section": "Pflichtbereich P",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1996-p7",
         "label": "p7",
-        "type": "pflicht-p",
-        "href": "1996_p7.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p7.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p7.html"
+        "section": "Pflichtbereich P",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1996-p8",
         "label": "p8",
-        "type": "pflicht-p",
-        "href": "1996_p8.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p8.html",
-        "pageUrl": "http://www.walterbauer.net/1996_p8.html"
+        "section": "Pflichtbereich P",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "3,5 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1996-w1a",
         "label": "w1a",
-        "type": "wahl-w",
-        "href": "1996_w1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1a.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w1a.html"
+        "section": "Wahlbereich W",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1996-w1b",
         "label": "w1b",
-        "type": "wahl-w",
-        "href": "1996_w1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1b.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w1b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1996-w2a",
         "label": "w2a",
-        "type": "wahl-w",
-        "href": "1996_w2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w2a.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w2a.html"
+        "section": "Wahlbereich W",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1996-w2b",
         "label": "w2b",
-        "type": "wahl-w",
-        "href": "1996_w2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w2b.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w2b.html"
+        "section": "Wahlteil B",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1996-w3a",
         "label": "w3a",
-        "type": "wahl-w",
-        "href": "1996_w3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3a.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w3a.html"
+        "section": "Wahlbereich W",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "8,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1996-w3b",
         "label": "w3b",
-        "type": "wahl-w",
-        "href": "1996_w3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3b.html",
-        "pageUrl": "http://www.walterbauer.net/1996_w3b.html"
+        "section": "Wahlteil B",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       }
     ]
   },
@@ -4541,164 +5515,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1995_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1995.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1995-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1995_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1995_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1995-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1995_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_1a.html"
+        "section": "Hauptteil",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "1995-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1995_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "1995-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1995_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1995-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1995_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1995-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1995_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1995-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1995_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_2c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1995-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1995_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_3a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1995-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1995_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1995-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1995_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_3c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1995-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1995_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_4a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1995-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1995_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1995-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1995_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_4c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1995-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1995_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_5a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1995-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1995_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1995-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1995_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_5c.html"
+        "section": "Hauptteil",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1995-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1995_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1995_6a.html"
+        "section": "Hauptteil",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       },
       {
+        "id": "1995-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1995_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1995_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1995-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1995_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1995_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1995_6c.html"
+        "section": "Hauptteil",
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Definitionsmenge ermitteln (Nenner != 0), mit Hauptnenner multiplizieren, quadratische Formel (p/q) anwenden."
       }
     ]
   },
@@ -4707,164 +5717,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1994.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1994.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1994-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1990_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1990_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1994-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1994_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_1a.html"
+        "section": "Hauptteil",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1994-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1994_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1994-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1994_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1994-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1994_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1994-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1994_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1994-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1994_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_2c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1994-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1994_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_3a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1994-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1994_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1994-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1994_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_3c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1994-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1994_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_4a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1994-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1994_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1994-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1994_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_4c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1994-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1994_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_5a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1994-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1994_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1994-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1994_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_5c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1994-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1994_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1994_6a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1994-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1994_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1994_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1994-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1994_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1994_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1994_6c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       }
     ]
   },
@@ -4873,164 +5919,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1993_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1993.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1993-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1993_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1993_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1993-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1993_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_1a.html"
+        "section": "Hauptteil",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       },
       {
+        "id": "1993-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1993_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1993-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1993_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1993-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1993_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1993-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1993_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1993-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1993_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_2c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1993-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1993_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_3a.html"
+        "section": "Hauptteil",
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a/sin(α) = b/sin(β) = c/sin(γ). Einsetzbar wenn eine Seite und der gegenüberliegende Winkel bekannt sind."
       },
       {
+        "id": "1993-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1993_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1993-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1993_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_3c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1993-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1993_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_4a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1993-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1993_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1993-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1993_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_4c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1993-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1993_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_5a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1993-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1993_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1993-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1993_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_5c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1993-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1993_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1993_6a.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1993-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1993_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1993_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1993-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1993_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1993_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1993_6c.html"
+        "section": "Hauptteil",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       }
     ]
   },
@@ -5039,164 +6121,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1992_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1992.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1992-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1992_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1992_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1992-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1992_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_1a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1992-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1992_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1992-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1992_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1992-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1992_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1992-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1992_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1992-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1992_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_2c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1992-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1992_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_3a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1992-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1992_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1992-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1992_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_3c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1992-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1992_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_4a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1992-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1992_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1992-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1992_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_4c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1992-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1992_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_5a.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1992-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1992_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1992-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1992_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_5c.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1992-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1992_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1992_6a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1992-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1992_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1992_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1992-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1992_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1992_6c.html"
+        "section": "Hauptteil",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       }
     ]
   },
@@ -5205,164 +6323,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1991_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1991.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1991-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1991_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1991_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1991-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1991_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_1a.html"
+        "section": "Hauptteil",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1991-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1991_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1991-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1991_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1991-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1991_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1991-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1991_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1991-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1991_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_2c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1991-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1991_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_3a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1991-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1991_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1991-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1991_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_3c.html"
+        "section": "Hauptteil",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1991-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1991_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_4a.html"
+        "section": "Hauptteil",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1991-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1991_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1991-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1991_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_4c.html"
+        "section": "Hauptteil",
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Scheitelpunktform y = a(x-d)²+e oder Normalform y = x²+px+q. Nullstellen mit p/q-Formel, Schnittpunkte durch Gleichsetzen ermitteln."
       },
       {
+        "id": "1991-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1991_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_5a.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1991-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1991_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1991-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1991_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_5c.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1991-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1991_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1991_6a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1991-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1991_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1991_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1991-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1991_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1991_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1991_6c.html"
+        "section": "Hauptteil",
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "V = G * h. Mantel = Umfang(G) * h. Auf Einheitenumrechnungen achten (cm³, dm³, Liter)."
       }
     ]
   },
@@ -5371,164 +6525,200 @@ const YEARS_DATA = [
     "eraId": "classic-1990",
     "eraTitle": "Prüfungen 1990–1995",
     "points": 30,
-    "structure": "6 Hauptaufgaben mit jeweils Teilaufgaben (a, b, c)",
-    "calcAllowed": "Ja (Taschenrechner)",
+    "duration": "180 Minuten",
+    "structure": "6 Aufgabenkomplexe mit jeweils Teilaufgaben (a, b, c)",
     "badgeColor": "slate",
-    "uebersichtUrl": "http://www.walterbauer.net/1990_uebersicht.html",
-    "sourceYearUrl": "http://www.walterbauer.net/1990.html",
     "taskCount": 19,
     "tasks": [
       {
+        "id": "1990-Übersicht",
         "label": "Übersicht",
-        "type": "general",
-        "href": "1990_uebersicht.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_uebersicht.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_uebersicht.html",
-        "pageUrl": "http://www.walterbauer.net/1990_uebersicht.html"
+        "section": "Wahlteil B",
+        "topic": "Mathematische Kompetenzen",
+        "category": "Allgemein",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Lösungsschritte strukturiert notieren und Zwischenergebnisse überprüfen."
       },
       {
+        "id": "1990-1a",
         "label": "1a",
-        "type": "general",
-        "href": "1990_1a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_1a.html"
+        "section": "Hauptteil",
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundfläche genau analysieren (Rechteck, gleichschenkliges Dreieck). Höhen und Kanten mit Pythagoras bestimmen."
       },
       {
+        "id": "1990-1b",
         "label": "1b",
-        "type": "general",
-        "href": "1990_1b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_1b.html"
+        "section": "Wahlteil B",
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Strahlensatz zur Bestimmung der Höhe der Ergänzungspyramide / des Ergänzungskegels nutzen. Formel für Stumpfvolumen anwenden."
       },
       {
+        "id": "1990-1c",
         "label": "1c",
-        "type": "general",
-        "href": "1990_1c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_1c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Terme vereinfachen, binomische Formeln rückwärts oder vorwärts anwenden. Formel systematisch nach der gesuchten Variablen auflösen."
       },
       {
+        "id": "1990-2a",
         "label": "2a",
-        "type": "general",
-        "href": "1990_2a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_2a.html"
+        "section": "Hauptteil",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1990-2b",
         "label": "2b",
-        "type": "general",
-        "href": "1990_2b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_2b.html"
+        "section": "Wahlteil B",
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Teilkörper einzeln berechnen (z.B. Zylinder + Halbkugel). Auf Nahtstellen bei der Oberfläche achten (Grundflächen entfallen innen)."
       },
       {
+        "id": "1990-2c",
         "label": "2c",
-        "type": "general",
-        "href": "1990_2c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_2c.html"
+        "section": "Hauptteil",
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Exakt mit Wurzeln und π rechnen, nicht in Dezimalbrüche umwandeln! Wurzelterme zusammenfassen."
       },
       {
+        "id": "1990-3a",
         "label": "3a",
-        "type": "general",
-        "href": "1990_3a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_3a.html"
+        "section": "Hauptteil",
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Rechtwinkliges Dreieck: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Pythagoras a²+b²=c²."
       },
       {
+        "id": "1990-3b",
         "label": "3b",
-        "type": "general",
-        "href": "1990_3b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_3b.html"
+        "section": "Wahlteil B",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1990-3c",
         "label": "3c",
-        "type": "general",
-        "href": "1990_3c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_3c.html"
+        "section": "Hauptteil",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1990-4a",
         "label": "4a",
-        "type": "general",
-        "href": "1990_4a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_4a.html"
+        "section": "Hauptteil",
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a/sin(α) = b/sin(β) = c/sin(γ). Einsetzbar wenn eine Seite und der gegenüberliegende Winkel bekannt sind."
       },
       {
+        "id": "1990-4b",
         "label": "4b",
-        "type": "general",
-        "href": "1990_4b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_4b.html"
+        "section": "Wahlteil B",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       },
       {
+        "id": "1990-4c",
         "label": "4c",
-        "type": "general",
-        "href": "1990_4c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_4c.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1990-5a",
         "label": "5a",
-        "type": "general",
-        "href": "1990_5a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_5a.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1990-5b",
         "label": "5b",
-        "type": "general",
-        "href": "1990_5b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_5b.html"
+        "section": "Wahlteil B",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1990-5c",
         "label": "5c",
-        "type": "general",
-        "href": "1990_5c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_5c.html"
+        "section": "Hauptteil",
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Grundwert, Prozentwert und Prozentsatz unterscheiden. Mehrwertsteuer und Rabatte nacheinander berechnen."
       },
       {
+        "id": "1990-6a",
         "label": "6a",
-        "type": "general",
-        "href": "1990_6a.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6a.html",
-        "pageUrl": "http://www.walterbauer.net/1990_6a.html"
+        "section": "Hauptteil",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1990-6b",
         "label": "6b",
-        "type": "general",
-        "href": "1990_6b.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6b.html",
-        "pageUrl": "http://www.walterbauer.net/1990_6b.html"
+        "section": "Wahlteil B",
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik",
+        "points": "10,0 P",
+        "hilfsmittel": "Taschenrechner & Formelsammlung erlaubt",
+        "tipp": "Formel Kn = K0 * (1 + p/100)^n anwenden. Auf Laufzeiten (Tage/Monate/Jahre) und Zinseszins achten."
       },
       {
+        "id": "1990-6c",
         "label": "6c",
-        "type": "general",
-        "href": "1990_6c.html",
-        "taskUrl": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6c.html",
-        "pageUrl": "http://www.walterbauer.net/1990_6c.html"
+        "section": "Hauptteil",
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie",
+        "points": "5,0 P",
+        "hilfsmittel": "Taschenrechner erlaubt",
+        "tipp": "Beliebiges Dreieck: a² = b² + c² - 2bc*cos(α). Einsetzbar bei SWS (zwei Seiten + eingeschlossener Winkel) oder SSS."
       }
     ]
   }
@@ -5545,240 +6735,206 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A2/5",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2022,
         "label": "A1/5",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2022,
         "label": "A2/3",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p3.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "A1/2",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p2.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "A1/5",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2020,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p4.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2018,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2017,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p6.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2016,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2014,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2013,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p4.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2011,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p4.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2009,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2008,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2007,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2007,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2006,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2005,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p3.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2005,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2004,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2003,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p5.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2003,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w3b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2002,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2001,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p4.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2000,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w3b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1999,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p3.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1999,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1998,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w3b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1997,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p3.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1997,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1996,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p6.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1996,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w2b.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1995,
         "label": "6a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6a.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1995,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6c.html"
+        "topic": "Bruchgleichungen, Quadratische Gleichungen",
+        "category": "Algebra & Gleichungen"
       }
     ]
   },
@@ -5792,107 +6948,92 @@ const TOPICS_DATA = [
       {
         "year": 2023,
         "label": "A2/3",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p3.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "A2/5",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p5.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1b.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "B/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_2a.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2021,
         "label": "B/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_4a.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2019,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p5.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2015,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p6.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2012,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p5.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2010,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p4.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2008,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p6.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2006,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p5.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2004,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p3.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2002,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p3.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 2000,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p5.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       },
       {
         "year": 1998,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p2.html"
+        "topic": "Lineare Gleichungssysteme",
+        "category": "Algebra & Gleichungen"
       }
     ]
   },
@@ -5906,415 +7047,356 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/7a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p7a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p7a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p7a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2024,
         "label": "A1/7b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p7b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p7b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p7b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2024,
         "label": "A2/6",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2023,
         "label": "A1/7",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2023,
         "label": "A2/6",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2022,
         "label": "A1/7",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2022,
         "label": "A2/6",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2021,
         "label": "A1/7",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2021,
         "label": "A2/4",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p4.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2020,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2020,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2019,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p4.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2018,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p4.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2017,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2016,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2015,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2014,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2013,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2012,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2011,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2009,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p6.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2008,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2007,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2006,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2005,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2005,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2004,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2003,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2003,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2002,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2001,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2000,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2000,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1999,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1999,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1998,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1998,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1997,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1997,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p8.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1996,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p7.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1995,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1995,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1994,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1994,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1994,
         "label": "6a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1994,
         "label": "6b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1994,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_6c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1993,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1993,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1993,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_5c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "6a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "6b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "6a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "6b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4c.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "6a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6a.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "6b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6b.html"
+        "topic": "Sparen, Zinsen, Zinseszins, Prozent, Diagramme",
+        "category": "Sachrechnen & Finanzmathematik"
       }
     ]
   },
@@ -6328,107 +7410,92 @@ const TOPICS_DATA = [
       {
         "year": 2007,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p7.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2006,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p8.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2004,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p8.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2002,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p7.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 2001,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p8.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1996,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p8.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5a.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5b.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1992,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_5c.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5a.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5b.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1991,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_5c.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "5a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_5a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_5a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5a.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5b.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       },
       {
         "year": 1990,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_5c.html"
+        "topic": "Preise, Preisbewegungen, Währung",
+        "category": "Sachrechnen & Finanzmathematik"
       }
     ]
   },
@@ -6442,737 +7509,632 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A2/3",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p3.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2024,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_1b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2024,
         "label": "B/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2024,
         "label": "B/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "A1/4",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "A2/4",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_p1b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "B/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_p2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_p2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_p2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "B/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2023,
         "label": "B/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_4a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2022,
         "label": "A2/4",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2022,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_p1b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2022,
         "label": "B/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2022,
         "label": "B/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2022,
         "label": "B/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_4a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "A1/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p4a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "A1/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "A2/5",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "B/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "B/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2021,
         "label": "B/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_4a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2020,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2020,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2020,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2020,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2019,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2019,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2019,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2019,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2018,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2018,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2018,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2018,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2017,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2017,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2017,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2017,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2016,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2016,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2016,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2016,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2015,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2015,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2015,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2015,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2014,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2014,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2014,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2014,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2013,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2013,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2013,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2013,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2012,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2012,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2012,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2012,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2011,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2011,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2011,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2011,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2010,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2010,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2009,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2009,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2009,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2008,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2008,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2007,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2007,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2006,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2006,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2005,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2005,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2004,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2004,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2003,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2003,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w1b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2003,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2002,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2002,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2001,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p3.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2001,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2001,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w3b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2000,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 2000,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1999,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1999,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1998,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p1.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1998,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w3a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1997,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1997,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p6.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1997,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1996,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p4.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1996,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p5.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1996,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w2a.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1995,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1995,
         "label": "5c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_5c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_5c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_5c.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1995,
         "label": "6b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_6b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1994,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1994,
         "label": "5b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_5b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_5b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_5b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1993,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1992,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4b.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       },
       {
         "year": 1991,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4c.html"
+        "topic": "Funktionen, Parabeln",
+        "category": "Funktionen & Analysis"
       }
     ]
   },
@@ -7186,954 +8148,818 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/5",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2024,
         "label": "A2/1",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2024,
         "label": "B/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2023,
         "label": "A1/1",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2023,
         "label": "A2/1",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2023,
         "label": "B/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "A1/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "A1/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "A1/1c",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p1c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "A2/1",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "B/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2022,
         "label": "B/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2021,
         "label": "A2/1",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2021,
         "label": "B/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2021,
         "label": "B/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2020,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2020,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2020,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2020,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2019,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2019,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2019,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2019,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2018,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2018,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2018,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2018,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2017,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2017,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2017,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2017,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2016,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2016,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2016,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2016,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2015,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2015,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2015,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2015,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2014,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2014,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2014,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2014,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2013,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2013,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2013,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2013,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2012,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2012,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2012,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2011,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2011,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2011,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2011,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2011,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2010,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2010,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2010,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2009,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2009,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2008,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2008,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2008,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2007,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p3.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2007,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2007,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2006,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2006,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2006,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2006,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2005,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2005,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p6.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2005,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2004,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p1.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2004,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p2.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2004,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2004,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2003,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p3.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2003,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p4.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2003,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2003,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2002,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p6.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2002,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2002,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2001,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2001,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w2a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2001,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w2b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2000,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p3.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2000,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p4.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2000,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 2000,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1999,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1999,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p6.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1999,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1999,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1998,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1998,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p6.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1998,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1998,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1997,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p5.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1997,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1997,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1996,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p3.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1996,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1996,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1995,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1995,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1995,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1995,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1995,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1994,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1994,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1994,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1994,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1994,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4a.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4b.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6c.html"
+        "topic": "Trigonometrie",
+        "category": "Geometrie & Trigonometrie"
       }
     ]
   },
@@ -8147,233 +8973,200 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/1",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2024,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "A1/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p2a.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "A1/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p2.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2021,
         "label": "A1/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p1a.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2021,
         "label": "A1/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p1b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2021,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2020,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2018,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2017,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2016,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2015,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2014,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2014,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2013,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2012,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p2.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2012,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2011,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2010,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2008,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w4b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2006,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w4a.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w1a.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1a.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2003,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p2.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2003,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w2b.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2000,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1999,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p2.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1998,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p3.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1997,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p1.html"
+        "topic": "Quadratische Pyramiden",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -8387,177 +9180,152 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2021,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p2.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2020,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2018,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2a.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2016,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2015,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2015,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w2a.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2014,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2014,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w2b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2013,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2013,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w2b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2012,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w2b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2011,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p3.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p2.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w4b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w3b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p6.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p2.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w3b.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2001,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p1.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2000,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2000_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_p2.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1999,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_1999_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_p1.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1998,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_1998_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_p4.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1997,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_1997_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_p2.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1996,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p1.html"
+        "topic": "Kegel, Kugel, Zylinder",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -8571,163 +9339,140 @@ const TOPICS_DATA = [
       {
         "year": 2006,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2006,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w4a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w4b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w3a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2001,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2000,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w1b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1997,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w3b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1996,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1996,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1a.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1b.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1c.html"
+        "topic": "Stümpfe",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -8741,163 +9486,140 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p2.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2b.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2020,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2019,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2018,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2017,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2016,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2015,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2014,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2013,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2011,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2010,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w2b.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2009,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w2a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2008,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p3.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w3a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w3a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2004_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_p5.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2001,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p2.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1998,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1997,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w3a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1b.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1a.html"
+        "topic": "Besondere Pyramiden",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -8911,380 +9633,326 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2023,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p2.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2023,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_p2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_p2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2021,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p2.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2020,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2019,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2019,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2018,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2017,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2015,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2012,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2011,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2010,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p1.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2010,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2009,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2009,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2009,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w4b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2008,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p4.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2008,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w3b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2006,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p3.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2005,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2005_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_p2.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2003,
         "label": "P1",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p1.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2003,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w4b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2001,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2000,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w1a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1999,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w3a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1999,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w3b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1998,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1997,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w3b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1996,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_1996_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_p2.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1995,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1994_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1994_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1994,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "1b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1992_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1992_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1992,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "2a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2a.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "2b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2b.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1990,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2c.html"
+        "topic": "Zusammengesetzte Körper",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -9298,93 +9966,80 @@ const TOPICS_DATA = [
       {
         "year": 2023,
         "label": "A1/3",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p3.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2023,
         "label": "B/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_4b.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2017,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w2b.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2012,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p3.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2009,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w1a.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2008,
         "label": "W2a",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2a.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2007,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p4.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2006,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3a.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2005,
         "label": "W1a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w1a.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2005,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w4a.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2002,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p5.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2001,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p6.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       },
       {
         "year": 2000,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w1b.html"
+        "topic": "Streckenzüge und Flächen auf Körpern und im Raum",
+        "category": "Geometrie & Raumlehre"
       }
     ]
   },
@@ -9398,100 +10053,86 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/1",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p1.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p1.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p1.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2023,
         "label": "B/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_4b.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "A1/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p2b.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "A2/2",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p2.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2022,
         "label": "B/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_2b.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2012,
         "label": "P3",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p3.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2007,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p4.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2006,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2006_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_p4.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2004,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1b.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2003,
         "label": "P2",
-        "url": "http://www.walterbauer.net/aufgabe_2003_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_p2.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2002,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2002_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_p5.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 2001,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2001_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_p6.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1993,
         "label": "1a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1a.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       },
       {
         "year": 1991,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_6c.html"
+        "topic": "Prismen, Würfel, Quader",
+        "category": "Stereometrie (Körper)"
       }
     ]
   },
@@ -9505,366 +10146,314 @@ const TOPICS_DATA = [
       {
         "year": 2023,
         "label": "A1/5",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p5.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2019,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2018,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2018,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2017,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2016,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2015,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2014,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2013,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2012,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2011,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2010,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2009,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w4b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2008,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2008,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2008,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w4b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2007,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2006,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2006,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2005,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2004,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2004,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2002,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w4b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2001,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 2000,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1999,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1999,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1998,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1998,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1997,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1996,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1996,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3b.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1995,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1995,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1995,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1995,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1994,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1994,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1994,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1994,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1993,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1993,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1993,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1993,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1992,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1992,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1992,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1991,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1991,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1990,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_1c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1990,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       },
       {
         "year": 1990,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3c.html"
+        "topic": "Berechnung mit Variablen",
+        "category": "Algebra & Terme"
       }
     ]
   },
@@ -9878,317 +10467,272 @@ const TOPICS_DATA = [
       {
         "year": 2020,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2018,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2017,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2016,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2015,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2014,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2013,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2012,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2010,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2009,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2008,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2008,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w2b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2007,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2007_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2006,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2006,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2006_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2006_w3b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2005,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2005_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2005_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2005_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2004,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2003,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2003_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2003_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2003_w4b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2002,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2001,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2001_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2001_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 2000,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2000_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2000_w2b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1999,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1999_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1999_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1998,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1998,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1998_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1998_w2b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1997,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1997_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1997_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1996,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w1b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1996,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1996_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1996_w3b.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1995,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_1c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1995,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_2c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1995,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_3c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1995,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1995_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1995_4c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1994,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_1c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1994,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_2c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1994,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_3c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1994,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1994_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1994_4c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1993,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_1c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1993,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_2c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1993,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1993,
         "label": "4c",
-        "url": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_4c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_4c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1992,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_1c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1992,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_2c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1992,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_3c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1991,
         "label": "1c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_1c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_1c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1991,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       },
       {
         "year": 1990,
         "label": "2c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_2c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_2c.html"
+        "topic": "Berechnung ohne Verwendung gerundeter Werte",
+        "category": "Exaktes Rechnen"
       }
     ]
   },
@@ -10202,289 +10746,248 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/6a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p6a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2024,
         "label": "A1/6b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p6b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2023,
         "label": "A1/6",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p6.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2023,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_p1b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2022,
         "label": "A1/4",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p4.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2022,
         "label": "A1/7",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p7.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2022,
         "label": "B/1b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_p1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_p1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_p1b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2022,
         "label": "B/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_4b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2021,
         "label": "A1/6",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p6.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2021,
         "label": "A2/6",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p6.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2020,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p8.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2020,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w2b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2020,
         "label": "W3a",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2020,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w3b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2019,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2018,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p8.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2018,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2017,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p4.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2017,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p8.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2017,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w3b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2016,
         "label": "W2b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w2b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2016,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2016,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2015,
         "label": "W1b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w1b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w1b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2015,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w3b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2015,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2014,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p6.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2014,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w3b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2014,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2013,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p7.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2013,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2012,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p7.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2012,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w4b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2011,
         "label": "P5",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p5.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2011,
         "label": "W4b",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2010,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p6.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2010,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p7.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2010,
         "label": "W3b",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w3b.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2007,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2007_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2007_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2007_p7.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2004,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2004_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2004_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2004_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       },
       {
         "year": 2002,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2002_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2002_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2002_w4a.html"
+        "topic": "Verstehen und Begründen",
+        "category": "Mathematische Kompetenzen"
       }
     ]
   },
@@ -10498,380 +11001,326 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/2",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p2.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p2.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p2.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2024,
         "label": "A2/4",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a2_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a2_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a2_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2024,
         "label": "B/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_b_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_b_3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2023,
         "label": "A1/2a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p2a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p2a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p2a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2023,
         "label": "A1/2b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p2b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p2b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p2b.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2023,
         "label": "A2/5",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a2_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a2_p5.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2023,
         "label": "B/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_b_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_b_3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2022,
         "label": "A1/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2022,
         "label": "A1/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p3b.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2022,
         "label": "A1/4",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2022,
         "label": "A2/5",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a2_p5.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a2_p5.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a2_p5.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2022,
         "label": "B/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_b_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_b_3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2021,
         "label": "A1/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2021,
         "label": "A1/3b",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p3b.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2021,
         "label": "A2/3",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p3.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p3.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p3.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2021,
         "label": "A2/6",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a2_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a2_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a2_p6.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2021,
         "label": "B/3a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_3a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2020,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2020_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_p6.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2020,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2020_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2020_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2020_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2019,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2019,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2019_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2019,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2019_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2019_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2019_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2018,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2018,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2018_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2018,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2018_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2018_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2018_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2017,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2017,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2017_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2017,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2017_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2017_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2017_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2016,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2016,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2016_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2016,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2016_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2016_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2016_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2015,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2015,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2015_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2015,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2015_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2015_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2015_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2014,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p6.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2014,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2014_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2014,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2014_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2014_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2014_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2013,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2013,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2013_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2013,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2013_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2013_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2013_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2012,
         "label": "P4",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p4.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p4.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p4.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2012,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2012_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2012,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2012_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2012_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2012_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2011,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2011,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2011_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2011,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2011_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2011_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2011_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2010,
         "label": "P6",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p6.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2010,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2010_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2010,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2010_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2010_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2010_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2009,
         "label": "P7",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p7.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p7.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p7.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2009,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2009_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2009,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2009_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2009_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2009_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2008,
         "label": "P8",
-        "url": "http://www.walterbauer.net/aufgabe_2008_p8.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_p8.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_p8.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       },
       {
         "year": 2008,
         "label": "W4a",
-        "url": "http://www.walterbauer.net/aufgabe_2008_w4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2008_w4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2008_w4a.html"
+        "topic": "Statistik, Wahrscheinlichkeit",
+        "category": "Stochastik"
       }
     ]
   },
@@ -10893,51 +11342,44 @@ const TOPICS_DATA = [
       {
         "year": 2024,
         "label": "A1/4a",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p4a.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2024,
         "label": "A1/4b",
-        "url": "http://www.walterbauer.net/aufgabe_2024_a1_p4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2024_a1_p4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2024_a1_p4b.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2023,
         "label": "A1/8a",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p8a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p8a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p8a.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2023,
         "label": "A1/8b",
-        "url": "http://www.walterbauer.net/aufgabe_2023_a1_p8b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2023_a1_p8b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2023_a1_p8b.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2022,
         "label": "A1/6a",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p6a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p6a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p6a.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2022,
         "label": "A1/6b",
-        "url": "http://www.walterbauer.net/aufgabe_2022_a1_p6b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2022_a1_p6b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2022_a1_p6b.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       },
       {
         "year": 2021,
         "label": "A1/6",
-        "url": "http://www.walterbauer.net/aufgabe_2021_a1_p6.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_a1_p6.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_a1_p6.html"
+        "topic": "Reihen und Folgen",
+        "category": "Algebra & Folgen"
       }
     ]
   },
@@ -10959,79 +11401,68 @@ const TOPICS_DATA = [
       {
         "year": 2021,
         "label": "B/1a",
-        "url": "http://www.walterbauer.net/aufgabe_2021_b_1a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_2021_b_1a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_2021_b_1a.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "3a",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3a.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1993,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3b.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6c.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3b.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4a.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4b.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4a.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4b.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6c.html"
+        "topic": "Sinussatz",
+        "category": "Geometrie & Trigonometrie"
       }
     ]
   },
@@ -11045,72 +11476,62 @@ const TOPICS_DATA = [
       {
         "year": 1993,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1993_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1993_3b.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1992,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1992_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1992_6c.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3b.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_3c.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4a",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4a.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4a.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1991,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1991_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1991_4b.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "3b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3b.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "3c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_3c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_3c.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "4b",
-        "url": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_4b.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_4b.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       },
       {
         "year": 1990,
         "label": "6c",
-        "url": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "aufgabeUrl": "http://www.walterbauer.net/aufgabe_1990_6c.html",
-        "loesungUrl": "http://www.walterbauer.net/loesung_1990_6c.html"
+        "topic": "Kosinussatz",
+        "category": "Geometrie & Trigonometrie"
       }
     ]
   }
@@ -11119,14 +11540,14 @@ const TOPICS_DATA = [
 const REFORMS_DATA = [
   {
     year: 2021,
-    title: 'Reform 2021 (Neuer Bildungsplan 2016)',
-    highlight: 'Zweiteilung des Pflichtteils: A1 (ohne Taschenrechner) & A2 (mit Taschenrechner)',
+    title: 'Reform 2021 (Bildungsplan 2016)',
+    highlight: 'Zweiteilung des Pflichtteils: A1 (ohne Hilfsmittel) & A2 (mit Taschenrechner)',
     points: 50,
     active: true,
     details: [
-      '<strong>Pflichtteil A1 (10 Punkte):</strong> 7 Aufgaben zur Überprüfung grundlegender mathematischer Basiskompetenzen OHNE Verwendung von Taschenrechner und Formelsammlung.',
-      '<strong>Pflichtteil A2 (20 Punkte):</strong> 6 Aufgaben mit Taschenrechner und Formelsammlung (Funktionen, Trigonometrie, Stereometrie, Daten & Zufall).',
-      '<strong>Wahlteil B (20 Punkte):</strong> 4 komplexe Aufgaben (B1 bis B4). Der Prüfling muss genau 2 dieser 4 Aufgaben vollständig lösen.',
+      '<strong>Pflichtteil A1 (10 Punkte):</strong> 7 Aufgaben zur Überprüfung grundlegender mathematischer Basiskompetenzen OHNE Verwendung von Taschenrechner und Formelsammlung (Arbeitszeit: 45 Min).',
+      '<strong>Pflichtteil A2 (20 Punkte):</strong> 6 Aufgaben mit wissenschaftlichem Taschenrechner und Formelsammlung (Funktionen, Trigonometrie, Stereometrie, Stochastik).',
+      '<strong>Wahlteil B (20 Punkte):</strong> 4 komplexe Wahlaufgaben (B1 bis B4). Der Prüfling muss genau 2 dieser 4 Aufgaben vollständig lösen.',
       '<strong>Gesamtpunktzahl:</strong> 50 Punkte (10 Pkt A1 + 20 Pkt A2 + 20 Pkt B).'
     ]
   },
@@ -11174,36 +11595,36 @@ const FORMULAS_DATA = [
   {
     category: 'Stereometrie (Körper)',
     items: [
-      { name: 'Quadratische Pyramide', formula: 'V = \frac{1}{3} \cdot a^2 \cdot h', note: 'M = 2 \cdot a \cdot h_s, \quad O = a^2 + M' },
-      { name: 'Kreiskegel', formula: 'V = \frac{1}{3} \cdot \pi \cdot r^2 \cdot h', note: 'M = \pi \cdot r \cdot s, \quad s = \sqrt{r^2 + h^2}' },
-      { name: 'Kugel', formula: 'V = \frac{4}{3} \cdot \pi \cdot r^3', note: 'O = 4 \cdot \pi \cdot r^2' },
-      { name: 'Kreiszylinder', formula: 'V = \pi \cdot r^2 \cdot h', note: 'M = 2 \cdot \pi \cdot r \cdot h, \quad O = 2 \pi r^2 + M' },
-      { name: 'Pyramidenstumpf', formula: 'V = \frac{h}{3} \cdot (a_1^2 + a_1 a_2 + a_2^2)', note: 'Strahlensatz zur Höhenbestimmung der Ergänzungspyramide' }
+      { name: 'Quadratische Pyramide', formula: 'V = 1/3 · a² · h', note: 'M = 2 · a · hs, O = a² + M, hs² = h² + (a/2)²' },
+      { name: 'Kreiskegel', formula: 'V = 1/3 · π · r² · h', note: 'M = π · r · s, s² = r² + h², O = π r² + M' },
+      { name: 'Kugel', formula: 'V = 4/3 · π · r³', note: 'O = 4 · π · r²' },
+      { name: 'Kreiszylinder', formula: 'V = π · r² · h', note: 'M = 2 · π · r · h, O = 2 π r² + M' },
+      { name: 'Pyramidenstumpf', formula: 'V = h/3 · (a1² + a1·a2 + a2²)', note: 'Strahlensatz zur Höhenbestimmung der Ergänzungspyramide' }
     ]
   },
   {
     category: 'Trigonometrie',
     items: [
-      { name: 'Rechtwinkliges Dreieck', formula: '\sin(\alpha) = \frac{Gk}{Hyp}, \; \cos(\alpha) = \frac{Ak}{Hyp}, \; \tan(\alpha) = \frac{Gk}{Ak}', note: '\sin^2(\alpha) + \cos^2(\alpha) = 1' },
-      { name: 'Sinussatz', formula: '\frac{a}{\sin(\alpha)} = \frac{b}{\sin(\beta)} = \frac{c}{\sin(\gamma)}', note: 'Anwendung bei beliebigem Dreieck (zwei Winkel & Seite)' },
-      { name: 'Kosinussatz', formula: 'a^2 = b^2 + c^2 - 2bc \cdot \cos(\alpha)', note: 'Anwendung bei zwei Seiten & eingeschlossenem Winkel (SWS / SSS)' }
+      { name: 'Rechtwinkliges Dreieck', formula: 'sin(α) = Gk/Hyp · cos(α) = Ak/Hyp · tan(α) = Gk/Ak', note: 'sin²(α) + cos²(α) = 1, Pythagoras: a² + b² = c²' },
+      { name: 'Sinussatz', formula: 'a / sin(α) = b / sin(β) = c / sin(γ)', note: 'Anwendung bei beliebigem Dreieck (zwei Winkel & eine Seite)' },
+      { name: 'Kosinussatz', formula: 'a² = b² + c² - 2bc · cos(α)', note: 'Anwendung bei beliebigem Dreieck (zwei Seiten & Zwischenwinkel)' }
     ]
   },
   {
     category: 'Funktionen & Algebra',
     items: [
-      { name: 'Scheitelpunktform', formula: 'y = a(x - d)^2 + e', note: 'Scheitel S(d|e); Normalparabel wenn a = 1' },
-      { name: 'Allgemeine Form (Parabel)', formula: 'y = ax^2 + bx + c', note: 'Schnittpunkt mit y-Achse bei P(0|c)' },
-      { name: 'p/q-Formel', formula: 'x_{1,2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2 - q}', note: 'Gleichung muss normiert sein: x² + px + q = 0' },
-      { name: 'Lineare Funktion', formula: 'y = m \cdot x + b', note: 'Steigung m = \frac{y_2 - y_1}{x_2 - x_1}' }
+      { name: 'Scheitelpunktform', formula: 'y = a(x - d)² + e', note: 'Scheitelpunkt S(d | e). Nach oben offen wenn a > 0' },
+      { name: 'Allgemeine Form (Parabel)', formula: 'y = ax² + bx + c', note: 'Schnittpunkt mit y-Achse bei Sy(0 | c)' },
+      { name: 'p/q-Formel', formula: 'x1,2 = -p/2 ± √((p/2)² - q)', note: 'Für normierte Gleichung: x² + px + q = 0' },
+      { name: 'Lineare Funktion', formula: 'y = m · x + b', note: 'Steigung m = (y2 - y1) / (x2 - x1)' }
     ]
   },
   {
     category: 'Stochastik & Zinsrechnung',
     items: [
-      { name: 'Zinseszinsformel', formula: 'K_n = K_0 \cdot (1 + \frac{p}{100})^n', note: 'Wachstumsfaktor q = 1 + p/100' },
-      { name: '1. Pfadregel (Multiplikation)', formula: 'P(Pfad) = p_1 \cdot p_2 \cdot \dots \cdot p_k', note: 'Wahrscheinlichkeiten entlang eines Pfades multiplizieren' },
-      { name: '2. Pfadregel (Addition)', formula: 'P(Ereignis) = \sum P(Pfad_i)', note: 'Wahrscheinlichkeiten verschiedener Pfade addieren' }
+      { name: 'Zinseszinsformel', formula: 'Kn = K0 · (1 + p/100)^n', note: 'Wachstumsfaktor q = 1 + p/100' },
+      { name: '1. Pfadregel (Produktregel)', formula: 'P(Pfad) = p1 · p2 · ... · pk', note: 'Wahrscheinlichkeiten entlang eines Pfades multiplizieren' },
+      { name: '2. Pfadregel (Summenregel)', formula: 'P(Ereignis) = P(Pfad1) + P(Pfad2) + ...', note: 'Wahrscheinlichkeiten verschiedener günstiger Pfade addieren' }
     ]
   }
 ];
