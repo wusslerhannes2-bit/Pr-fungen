@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="dark">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prüfung Realschule BW — Mathematik Abschlussprüfungen 1990–2024</title>
-  <meta name="description" content="Moderne, übersichtliche Sammlung aller Realschulabschlussprüfungen Mathematik Baden-Württemberg (1990–2024). Alle Aufgaben, Lösungen, thematische Gliederung und Prüfungsordnungen direkt auf der Seite.">
+  <meta name="description" content="Moderne, übersichtliche Sammlung aller Realschulabschlussprüfungen Mathematik Baden-Württemberg (1990–2024). Alle Prüfungsjahre, Aufgaben, Grafiken und Formeln im klaren Blau-Weiß-Design.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -13,15 +13,11 @@
 </head>
 <body>
 
-  <!-- Subtle ambient background glow -->
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-
-  <!-- Minimalist Header (Kein Dropdown, kein GitHub-Logo) -->
+  <!-- Minimalist Header (Blau-Weiß, kein Dropdown, kein GitHub-Logo) -->
   <header class="site-header">
     <div class="header-inner container">
       <div class="brand">
-        <a href="#" class="brand-link" id="brand-home-link">
+        <a href="index.html" class="brand-link" id="brand-home-link">
           <div class="brand-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
@@ -37,7 +33,6 @@
         </a>
       </div>
 
-      <!-- Nur Theme-Toggle auf der rechten Seite -->
       <div class="header-actions">
         <button class="theme-toggle-btn" id="theme-toggle" aria-label="Design umschalten" title="Zwischen Hell- und Dunkelmodus wechseln">
           <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -70,7 +65,7 @@
         Mathematik <span class="gradient-text">Abschlussprüfungen</span>
       </h1>
       <p class="hero-lead">
-        Alle 35 Prüfungsjahrgänge (1990–2024) übersichtlich gegliedert. Wähle ein Prüfungsjahr oder Thema, um alle Aufgaben direkt auf dieser Seite zu öffnen.
+        Alle 35 Prüfungsjahrgänge (1990–2024). Wähle eine Prüfung, um die Aufgaben einzeln auf einer eigenen Unterseite mit Original-Grafiken und Pfeil-Navigation durchzugehen.
       </p>
 
       <!-- Universal Search -->
@@ -83,7 +78,7 @@
           <input 
             type="search" 
             id="global-search-input" 
-            placeholder="Jahr (z.B. 2024), Thema (z.B. Parabel, Trigonometrie) oder Aufgabe suchen..."
+            placeholder="Jahrgang (z.B. 2024) oder mathematisches Thema (z.B. Parabel, Pyramide) suchen..."
             autocomplete="off"
             spellcheck="false"
           >
@@ -124,7 +119,7 @@
         </button>
         <button class="tab-btn" data-target="tab-reformen" role="tab" id="tab-reformen-btn">
           <span class="tab-icon">⚖️</span>
-          <span>Prüfungsordnung & Notenrechner</span>
+          <span>Prüfungsordnungen & Notenrechner</span>
         </button>
         <button class="tab-btn" data-target="tab-formeln" role="tab" id="tab-formeln-btn">
           <span class="tab-icon">📏</span>
@@ -141,39 +136,12 @@
   <!-- Main Content Area -->
   <main class="main-content container">
 
-    <!-- IN-PAGE EXAM & TASK VIEWER (Wird direkt auf der Seite geöffnet) -->
-    <section class="inpage-exam-view" id="inpage-exam-view" style="display: none;">
-      <div class="inpage-view-header">
-        <button class="back-to-list-btn" id="close-inpage-view-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          <span>Zurück zur Übersicht</span>
-        </button>
-        <div class="exam-view-progress">
-          <span class="progress-label" id="exam-progress-label">0 / 0 gelöst</span>
-          <div class="progress-bar-track">
-            <div class="progress-bar-fill" id="exam-progress-bar" style="width: 0%;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="exam-header-banner" id="exam-header-banner">
-        <!-- Dynamisch gefüllt -->
-      </div>
-
-      <div class="exam-tasks-list" id="exam-tasks-list">
-        <!-- Dynamisch gefüllt -->
-      </div>
-    </section>
-
     <!-- TAB 1: PRÜFUNGSJAHRE -->
     <section class="tab-pane active" id="tab-jahre">
       <div class="section-toolbar">
         <div class="toolbar-left">
           <h2 class="section-title">Abschlussprüfungen nach Jahrgang</h2>
-          <p class="section-desc">Klicke auf einen Jahrgang oder eine Teilaufgabe, um sie direkt auf dieser Seite zu öffnen.</p>
+          <p class="section-desc">Klicke auf einen Jahrgang, um die komplette Prüfung auf einer eigenen Unterseite mit Einzelaufgaben-Navigation zu öffnen.</p>
         </div>
         <div class="toolbar-right">
           <div class="era-filter-pills" id="era-filter-container">
@@ -197,7 +165,7 @@
       <div class="section-toolbar">
         <div class="toolbar-left">
           <h2 class="section-title">Thematische Gliederung nach Stoffgebieten</h2>
-          <p class="section-desc">Gezielt nach Themen lernen: Finde alle Aufgaben geordnet nach mathematischen Kerngebieten.</p>
+          <p class="section-desc">Gezielt nach Themen lernen: Klicke auf eine Aufgabe, um sie direkt im Aufgaben-Runner zu öffnen.</p>
         </div>
         <div class="toolbar-right">
           <div class="category-filter-select-wrapper">
@@ -304,7 +272,7 @@
       <div class="section-toolbar">
         <div class="toolbar-left">
           <h2 class="section-title">Zufallsaufgabe für das Prüfungstraining</h2>
-          <p class="section-desc">Ziehe per Klick eine zufällige Prüfungsaufgabe zum Üben. Öffnet direkt auf dieser Seite!</p>
+          <p class="section-desc">Ziehe per Klick eine zufällige Prüfungsaufgabe zum Üben. Öffnet direkt auf der Aufgaben-Unterseite.</p>
         </div>
       </div>
 

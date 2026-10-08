@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prüfung Realschule BW — Aufgaben-Viewer</title>
+  <meta name="description" content="Interaktiver Aufgaben-Viewer für die Realschulabschlussprüfung Mathematik Baden-Württemberg. Alle Aufgaben und Lösungen mit Original-Grafiken.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+</head>
+<body class="runner-body">
+
+  <!-- Runner Header (Clean Blue & White) -->
+  <header class="runner-header">
+    <div class="runner-header-inner container">
+      <div class="runner-nav-left">
+        <a href="index.html" class="back-link-btn" title="Zurück zur Übersicht aller Jahrgänge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Zurück zur Jahresübersicht</span>
+        </a>
+      </div>
+
+      <div class="runner-exam-title">
+        <h1 class="exam-title-text" id="runner-exam-title">Prüfung 2024</h1>
+        <span class="exam-title-badge" id="runner-exam-badge">50 Punkte · Haupttermin</span>
+      </div>
+
+      <div class="runner-header-right">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Design umschalten" title="Zwischen Hell- und Dunkelmodus wechseln">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Task Quick Selector Bar -->
+  <nav class="task-selector-bar">
+    <div class="container selector-container">
+      <div class="selector-scroll" id="task-selector-pills">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Single-Task Runner -->
+  <main class="runner-main container">
+    <div class="task-display-card" id="task-display-card">
+
+      <!-- Task Meta Header -->
+      <div class="task-meta-header">
+        <div class="meta-left">
+          <span class="task-code-badge" id="current-task-code">Aufgabe A1/1</span>
+          <span class="task-section-badge" id="current-task-section">Pflichtteil A1</span>
+          <span class="task-points-badge" id="current-task-points">1,5 Punkte</span>
+        </div>
+
+        <div class="meta-right">
+          <button class="solve-toggle-btn" id="solve-toggle-btn">
+            <span class="solve-icon" id="solve-icon">○</span>
+            <span id="solve-btn-text">Als gelöst markieren</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Topic Info -->
+      <div class="task-topic-banner">
+        <div class="topic-left">
+          <span class="topic-label">Mathematisches Stoffgebiet:</span>
+          <h2 class="topic-title" id="current-task-topic">Stereometrie (Quadratische Pyramiden & Quader)</h2>
+        </div>
+        <div class="topic-right">
+          <span class="tool-rule-badge" id="current-task-tools">Hilfsmittelfrei</span>
+        </div>
+      </div>
+
+      <!-- Mode Switcher (Aufgabenstellung / Musterlösung) -->
+      <div class="task-view-mode-tabs">
+        <button class="view-mode-btn active" data-mode="aufgabe" id="mode-aufgabe-btn">
+          <span>📝 Aufgabenstellung</span>
+        </button>
+        <button class="view-mode-btn" data-mode="loesung" id="mode-loesung-btn">
+          <span>💡 Musterlösung & Rechenweg</span>
+        </button>
+      </div>
+
+      <!-- Content Area: Original Walter Bauer Graphics & Formulas -->
+      <div class="task-content-wrapper" id="task-content-area">
+        <!-- Dynamisch gefüllt mit Walter Bauer Bildern & Formeln -->
+      </div>
+
+      <!-- Bottom Step Navigation (Pfeile) -->
+      <div class="runner-footer-nav">
+        <button class="nav-arrow-btn" id="prev-task-btn" title="Vorherige Aufgabe (Taste: Links)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Vorherige Aufgabe</span>
+        </button>
+
+        <div class="task-counter-display">
+          <span class="counter-text" id="task-counter-text">Aufgabe 1 von 22</span>
+          <div class="counter-progress-bar">
+            <div class="counter-progress-fill" id="counter-progress-fill" style="width: 5%;"></div>
+          </div>
+        </div>
+
+        <button class="nav-arrow-btn" id="next-task-btn" title="Nächste Aufgabe (Taste: Rechts)">
+          <span>Nächste Aufgabe</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="runner.js"></script>
+</body>
+</html>

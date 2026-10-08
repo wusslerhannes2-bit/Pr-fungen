@@ -1,26 +1,23 @@
 /**
- * Prüfung Realschule BW — 100% In-Page Navigation & Application Engine
- * Alle Prüfungen (1990–2024) öffnen direkt auf dieser Seite.
+ * Prüfung Realschule BW — Portal Engine für index.html
+ * Blau-Weiß Design & Verlinkung zum Aufgaben-Runner (pruefung.html)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Application State
+  // Application State (Standard: Light / White Mode)
   const state = {
-    theme: localStorage.getItem('theme') || 'dark',
+    theme: localStorage.getItem('theme') || 'light',
     currentTab: 'tab-jahre',
     searchQuery: '',
     eraFilter: 'all',
     topicCategoryFilter: 'all',
     openTopics: new Set(),
-    activeExamYear: null,
-    targetTaskId: null,
     solvedTasks: new Set(JSON.parse(localStorage.getItem('solved_tasks') || '[]'))
   };
 
   // DOM Elements
   const htmlEl = document.documentElement;
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const brandHomeLink = document.getElementById('brand-home-link');
   const globalSearchInput = document.getElementById('global-search-input');
   const clearSearchBtn = document.getElementById('clear-search-btn');
   const searchShortcuts = document.getElementById('search-shortcuts');
@@ -37,14 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const rollRandomBtn = document.getElementById('roll-random-btn');
   const randomTaskDisplay = document.getElementById('random-task-display');
 
-  // In-Page Exam Viewer elements
-  const inpageExamView = document.getElementById('inpage-exam-view');
-  const closeInpageViewBtn = document.getElementById('close-inpage-view-btn');
-  const examHeaderBanner = document.getElementById('exam-header-banner');
-  const examTasksList = document.getElementById('exam-tasks-list');
-  const examProgressLabel = document.getElementById('exam-progress-label');
-  const examProgressBar = document.getElementById('exam-progress-bar');
-
   // Points Calculator inputs
   const calcA1 = document.getElementById('calc-a1');
   const calcA2 = document.getElementById('calc-a2');
@@ -56,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const calcGrade = document.getElementById('calc-grade');
 
   // ==========================================
-  // 1. Theme Management
+  // 1. Theme (Standard: White Mode)
   // ==========================================
   function applyTheme(theme) {
     state.theme = theme;
@@ -66,14 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTheme(state.theme);
 
   themeToggleBtn.addEventListener('click', () => {
-    applyTheme(state.theme === 'dark' ? 'light' : 'dark');
-  });
-
-  // Home Link returns to default view
-  brandHomeLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    closeInpageExamView();
-    switchTab('tab-jahre');
+    applyTheme(state.theme === 'light' ? 'dark' : 'light');
   });
 
   // ==========================================
@@ -88,10 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function switchTab(targetId) {
     state.currentTab = targetId;
-    closeInpageExamView(false); // Close in-page viewer when navigating away
     tabButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-target') === targetId));
     tabPanes.forEach(p => p.classList.toggle('active', p.id === targetId));
-    window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 68, behavior: 'smooth' });
+    window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 64, behavior: 'smooth' });
   }
 
   // ==========================================
@@ -100,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
   globalSearchInput.addEventListener('input', (e) => {
     state.searchQuery = e.target.value.trim().toLowerCase();
     clearSearchBtn.style.display = state.searchQuery ? 'flex' : 'none';
-    closeInpageExamView(false);
     renderYearsGrid();
     renderTopicsAccordion();
   });
@@ -120,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
       globalSearchInput.value = q;
       state.searchQuery = q.toLowerCase();
       clearSearchBtn.style.display = 'flex';
-      closeInpageExamView(false);
       renderYearsGrid();
       renderTopicsAccordion();
     });
@@ -132,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
       eraFilterContainer.querySelectorAll('.era-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       state.eraFilter = pill.getAttribute('data-era');
-      closeInpageExamView(false);
       renderYearsGrid();
     });
   });
@@ -169,13 +147,13 @@ document.addEventListener('DOMContentLoaded', () => {
     yearsGrid.innerHTML = filtered.map(yearData => {
       const tasksHtml = yearData.tasks.map(task => {
         const isSolved = state.solvedTasks.has(task.id);
+        const encodedLabel = encodeURIComponent(task.label.replace('/', '-'));
         return `
-          <button class="task-chip ${isSolved ? 'chip-solved' : ''}" 
-                  data-year="${yearData.year}" 
-                  data-taskid="${task.id}"
-                  title="Aufgabe ${escapeHtml(task.label)} direkt öffnen">
+          <a href="pruefung.html?jahr=${yearData.year}&aufgabe=${encodedLabel}" 
+             class="task-chip ${isSolved ? 'chip-solved' : ''}" 
+             title="Aufgabe ${escapeHtml(task.label)} direkt öffnen">
             ${isSolved ? '✓ ' : ''}${escapeHtml(task.label)}
-          </button>
+          </a>
         `;
       }).join('');
 
@@ -186,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="year-number">${yearData.year}</span>
               <span class="year-points-badge">${yearData.points} P</span>
             </div>
-            <span class="year-era-tag tag-${yearData.badgeColor}">
+            <span class="year-era-tag">
               ${escapeHtml(yearData.eraTitle.split('(')[0].trim())}
             </span>
           </div>
@@ -200,177 +178,20 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
 
-          <button class="open-exam-btn" data-year="${yearData.year}">
+          <a href="pruefung.html?jahr=${yearData.year}" class="open-exam-btn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
               <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
-            <span>Prüfung ${yearData.year} auf der Seite öffnen</span>
-          </button>
+            <span>Komplette Prüfung ${yearData.year} öffnen ↗</span>
+          </a>
         </article>
       `;
     }).join('');
-
-    // Attach click listeners to open the exam directly on the page
-    yearsGrid.querySelectorAll('.open-exam-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const yr = parseInt(btn.getAttribute('data-year'), 10);
-        openInpageExamView(yr);
-      });
-    });
-
-    yearsGrid.querySelectorAll('.task-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        const yr = parseInt(chip.getAttribute('data-year'), 10);
-        const taskId = chip.getAttribute('data-taskid');
-        openInpageExamView(yr, taskId);
-      });
-    });
   }
 
   // ==========================================
-  // 5. IN-PAGE EXAM & TASK VIEWER (Direkt im Browser)
-  // ==========================================
-  function openInpageExamView(year, targetTaskId = null) {
-    const yearData = YEARS_DATA.find(y => y.year === year);
-    if (!yearData) return;
-
-    state.activeExamYear = year;
-    state.targetTaskId = targetTaskId;
-
-    // Header Banner
-    examHeaderBanner.innerHTML = `
-      <div class="exam-banner-card">
-        <div class="banner-title-group">
-          <span class="year-era-tag tag-${yearData.badgeColor}" style="align-self: flex-start; margin-bottom: 0.35rem;">
-            ${escapeHtml(yearData.eraTitle)}
-          </span>
-          <h2 class="banner-year-title">Mathematik Abschlussprüfung ${yearData.year}</h2>
-          <p class="banner-subtitle">Realschule Baden-Württemberg · Haupttermin</p>
-        </div>
-        <div class="banner-meta-badges">
-          <div class="banner-badge badge-points">Gesamt: ${yearData.points} Punkte</div>
-          <div class="banner-badge">Dauer: ${escapeHtml(yearData.duration)}</div>
-          <div class="banner-badge badge-tools">${escapeHtml(yearData.structure.split('·')[0].trim())}</div>
-        </div>
-      </div>
-    `;
-
-    // Tasks List
-    examTasksList.innerHTML = yearData.tasks.map(task => {
-      const isSolved = state.solvedTasks.has(task.id);
-      return `
-        <article class="exam-task-card ${isSolved ? 'task-completed' : ''}" id="task-card-${task.id}">
-          <div class="task-card-header">
-            <div class="task-header-left">
-              <span class="task-badge-label">Aufgabe ${escapeHtml(task.label)}</span>
-              <span class="task-section-name">${escapeHtml(task.section)}</span>
-              <span class="task-points-pill">${task.points}</span>
-            </div>
-            <button class="task-complete-btn" data-taskid="${task.id}">
-              <span class="btn-check-icon">${isSolved ? '✓' : '○'}</span>
-              <span>${isSolved ? 'Als gelöst markiert' : 'Als gelöst abhaken'}</span>
-            </button>
-          </div>
-
-          <div class="task-topic-box">
-            <h3 class="task-topic-title">${escapeHtml(task.topic)}</h3>
-            <span class="task-tools-rule">Regel: <strong>${escapeHtml(task.hilfsmittel)}</strong></span>
-          </div>
-
-          <div class="task-guidance-box">
-            <div class="guidance-title">Lösungsansatz & mathematische Hinweise</div>
-            <p>${escapeHtml(task.tipp)}</p>
-          </div>
-        </article>
-      `;
-    }).join('');
-
-    // Attach checkbox listeners
-    examTasksList.querySelectorAll('.task-complete-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const taskId = btn.getAttribute('data-taskid');
-        toggleTaskSolved(taskId);
-      });
-    });
-
-    updateExamProgress();
-
-    // Show in-page view, hide years grid
-    inpageExamView.style.display = 'block';
-    document.getElementById('tab-jahre').style.display = 'none';
-
-    // Smooth scroll to top of in-page viewer or target task
-    if (targetTaskId) {
-      setTimeout(() => {
-        const el = document.getElementById(`task-card-${targetTaskId}`);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          el.classList.add('highlight-target');
-          setTimeout(() => el.classList.remove('highlight-target'), 2500);
-        }
-      }, 50);
-    } else {
-      inpageExamView.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  function closeInpageExamView(smoothScroll = true) {
-    inpageExamView.style.display = 'none';
-    const tabJahre = document.getElementById('tab-jahre');
-    if (state.currentTab === 'tab-jahre') {
-      tabJahre.style.display = 'block';
-    }
-    state.activeExamYear = null;
-    state.targetTaskId = null;
-    if (smoothScroll) {
-      window.scrollTo({ top: document.querySelector('.tabs-sticky-wrapper').offsetTop - 68, behavior: 'smooth' });
-    }
-  }
-
-  closeInpageViewBtn.addEventListener('click', () => {
-    closeInpageExamView(true);
-  });
-
-  function toggleTaskSolved(taskId) {
-    if (state.solvedTasks.has(taskId)) {
-      state.solvedTasks.delete(taskId);
-    } else {
-      state.solvedTasks.add(taskId);
-    }
-    localStorage.setItem('solved_tasks', JSON.stringify(Array.from(state.solvedTasks)));
-
-    // Re-render task card state
-    const card = document.getElementById(`task-card-${taskId}`);
-    if (card) {
-      const isSolved = state.solvedTasks.has(taskId);
-      card.classList.toggle('task-completed', isSolved);
-      const btn = card.querySelector('.task-complete-btn');
-      if (btn) {
-        btn.querySelector('.btn-check-icon').textContent = isSolved ? '✓' : '○';
-        btn.querySelector('span:last-child').textContent = isSolved ? 'Als gelöst markiert' : 'Als gelöst abhaken';
-      }
-    }
-
-    updateExamProgress();
-    renderYearsGrid(); // Update checkmarks on year cards
-  }
-
-  function updateExamProgress() {
-    if (!state.activeExamYear) return;
-    const yearData = YEARS_DATA.find(y => y.year === state.activeExamYear);
-    if (!yearData) return;
-
-    const total = yearData.tasks.length;
-    const solved = yearData.tasks.filter(t => state.solvedTasks.has(t.id)).length;
-    const pct = total > 0 ? Math.round((solved / total) * 100) : 0;
-
-    examProgressLabel.textContent = `${solved} / ${total} gelöst (${pct}%)`;
-    examProgressBar.style.width = `${pct}%`;
-  }
-
-  // ==========================================
-  // 6. Topics Accordion
+  // 5. Topics Accordion
   // ==========================================
   function renderTopicsAccordion() {
     const q = state.searchQuery;
@@ -402,15 +223,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const tasksHtml = topic.tasks.map(task => {
         const taskId = `${task.year}-${task.label.replace('/', '-')}`;
         const isSolved = state.solvedTasks.has(taskId);
+        const encodedLabel = encodeURIComponent(task.label.replace('/', '-'));
 
         return `
-          <div class="topic-task-card" data-year="${task.year}" data-taskid="${taskId}">
+          <a href="pruefung.html?jahr=${task.year}&aufgabe=${encodedLabel}" class="topic-task-card">
             <div class="task-matrix-left">
-              <span style="font-weight: 800; font-size: 0.95rem; margin-right: 0.5rem;">${task.year}</span>
+              <span style="font-weight: 800; font-size: 0.95rem; margin-right: 0.5rem; color: var(--text-primary);">${task.year}</span>
               <span style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-primary);">${isSolved ? '✓ ' : ''}${escapeHtml(task.label)}</span>
             </div>
-            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Auf der Seite öffnen ↗</span>
-          </div>
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Aufgabe öffnen ↗</span>
+          </a>
         `;
       }).join('');
 
@@ -440,7 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }).join('');
 
-    // Toggle accordion
     topicsAccordion.querySelectorAll('.topic-header').forEach(header => {
       header.addEventListener('click', () => {
         const id = header.getAttribute('data-id');
@@ -454,16 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
-
-    // Clicking a task inside a topic opens that year & task directly on the page!
-    topicsAccordion.querySelectorAll('.topic-task-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const yr = parseInt(card.getAttribute('data-year'), 10);
-        const taskId = card.getAttribute('data-taskid');
-        switchTab('tab-jahre');
-        openInpageExamView(yr, taskId);
-      });
-    });
   }
 
   topicCategoryFilter.addEventListener('change', (e) => {
@@ -472,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 7. Reforms Timeline
+  // 6. Reforms Timeline
   // ==========================================
   function renderReformsTimeline() {
     reformsContainer.innerHTML = REFORMS_DATA.map(item => `
@@ -491,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 8. Points Calculator
+  // 7. Points Calculator
   // ==========================================
   function updatePointsCalculator() {
     const a1 = parseFloat(calcA1.value) || 0;
@@ -506,26 +317,26 @@ document.addEventListener('DOMContentLoaded', () => {
     calcTotalPoints.textContent = total.toFixed(1);
 
     let gradeText = '';
-    let gradeColor = '#10b981';
+    let gradeColor = '#059669';
 
     if (total >= 46) {
       gradeText = 'Note 1 (Sehr gut)';
-      gradeColor = '#10b981';
+      gradeColor = '#059669';
     } else if (total >= 37.5) {
       gradeText = 'Note 2 (Gut)';
-      gradeColor = '#34d399';
+      gradeColor = '#2563eb';
     } else if (total >= 29) {
       gradeText = 'Note 3 (Befriedigend)';
-      gradeColor = '#60a5fa';
+      gradeColor = '#0284c7';
     } else if (total >= 20) {
       gradeText = 'Note 4 (Ausreichend — Bestanden)';
-      gradeColor = '#f59e0b';
+      gradeColor = '#d97706';
     } else if (total >= 10) {
       gradeText = 'Note 5 (Mangelhaft)';
-      gradeColor = '#f97316';
+      gradeColor = '#ea580c';
     } else {
       gradeText = 'Note 6 (Ungenügend)';
-      gradeColor = '#ef4444';
+      gradeColor = '#dc2626';
     }
 
     calcGrade.textContent = gradeText;
@@ -538,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updatePointsCalculator();
 
   // ==========================================
-  // 9. Formulas Grid
+  // 8. Formulas Grid
   // ==========================================
   function renderFormulas() {
     formulasContainer.innerHTML = FORMULAS_DATA.map(cat => `
@@ -558,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 10. Random Task Generator
+  // 9. Random Task Generator
   // ==========================================
   function initRandomTaskGenerator() {
     TOPICS_DATA.forEach(t => {
@@ -600,24 +411,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const randomItem = pool[Math.floor(Math.random() * pool.length)];
-    const taskId = `${randomItem.year}-${randomItem.label.replace('/', '-')}`;
+    const encodedLabel = encodeURIComponent(randomItem.label.replace('/', '-'));
 
     randomTaskDisplay.innerHTML = `
       <div class="drawn-task-year">Prüfung ${randomItem.year}</div>
       <div class="drawn-task-label">Aufgabe ${escapeHtml(randomItem.label)}</div>
       <div class="drawn-task-topic">Stoffgebiet: <strong>${escapeHtml(randomItem.topicTitle)}</strong></div>
-      <button class="primary-btn" id="open-random-inpage-btn" style="margin-top: 1rem;">
-        Aufgabe direkt auf der Seite öffnen ↗
-      </button>
+      <a href="pruefung.html?jahr=${randomItem.year}&aufgabe=${encodedLabel}" class="primary-btn" style="margin-top: 1rem; display: inline-flex;">
+        Aufgabe im Runner öffnen ↗
+      </a>
     `;
-
-    document.getElementById('open-random-inpage-btn').addEventListener('click', () => {
-      switchTab('tab-jahre');
-      openInpageExamView(randomItem.year, taskId);
-    });
   }
 
-  // Helper
   function escapeHtml(str) {
     if (!str) return '';
     return str
@@ -628,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/'/g, '&#039;');
   }
 
-  // Initial Renders
+  // Initial Runs
   renderYearsGrid();
   renderTopicsAccordion();
   renderReformsTimeline();
